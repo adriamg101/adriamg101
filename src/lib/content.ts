@@ -51,8 +51,8 @@ export function missingTranslations(c: Content): string[] {
 }
 
 const sectionDefs: { key: string; titleKey: UiKey; file: unknown }[] = [
-  { key: 'projects', titleKey: 'section.projects', file: projects },
   { key: 'experience', titleKey: 'section.experience', file: experience },
+  { key: 'projects', titleKey: 'section.projects', file: projects },
   { key: 'education', titleKey: 'section.education', file: education },
   { key: 'hobbies', titleKey: 'section.hobbies', file: hobbies },
 ]

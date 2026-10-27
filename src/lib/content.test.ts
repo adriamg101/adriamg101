@@ -128,8 +128,8 @@ describe('shipped about lines', () => {
 })
 
 describe('content sections', () => {
-  it('lists hobbies after education', () => {
-    expect(content.sections.map((s) => s.key)).toEqual(['projects', 'experience', 'education', 'hobbies'])
+  it('lists experience first and hobbies after education', () => {
+    expect(content.sections.map((s) => s.key)).toEqual(['experience', 'projects', 'education', 'hobbies'])
   })
 
   it('gives every shipped entry a card summary in English', () => {

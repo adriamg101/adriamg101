@@ -7,14 +7,14 @@
       "ca": "missme"
     },
     "summary": {
-      "en": "Memory hierarchy simulator for computer architecture students. Runs RISC-V programs on configurable caches, TLB, page tables and swap.",
-      "es": "Simulador de jerarquía de memoria para estudiantes de arquitectura de computadores. Ejecuta programas RISC-V sobre cachés, TLB, tablas de páginas y swap configurables.",
-      "ca": "Simulador de jerarquia de memòria per a estudiants d'arquitectura de computadors. Executa programes RISC-V sobre caches, TLB, taules de pàgines i swap configurables."
+      "en": "My final degree project: a desktop memory hierarchy simulator for computer architecture students. It runs RISC-V programs on caches, TLB, page tables and swap that you configure yourself.",
+      "es": "Mi trabajo de fin de grado: un simulador de escritorio de jerarquía de memoria para estudiantes de arquitectura de computadores. Ejecuta programas RISC-V sobre cachés, TLB, tablas de páginas y swap que configuras tú.",
+      "ca": "El meu treball de fi de grau: un simulador d'escriptori de jerarquia de memòria per a estudiants d'arquitectura de computadors. Executa programes RISC-V sobre caches, TLB, taules de pàgines i swap que configures tu."
     },
     "description": {
-      "en": "missme is a desktop tool for computer architecture students. You describe a memory hierarchy, run a RISC-V program on it and inspect every structure while it runs.\n\nCaches can have any number of levels, in a Von Neumann or Harvard layout, and there is a TLB, multilevel page tables and swap. Latencies are modeled, so the measured AMAT can be compared with the one worked out by hand.\n\nThe Rust engine and the Vue interface are fully separate and talk only through Tauri, so the engine is tested without the UI. There are 776 automated tests (474 for the engine and 302 for the interface), 80% line coverage in the engine, and 7 exercises checked by hand against the theory.",
-      "es": "missme es una herramienta de escritorio para estudiantes de arquitectura de computadores. Describes una jerarquía de memoria, ejecutas un programa RISC-V sobre ella e inspeccionas cada estructura mientras corre.\n\nLas cachés pueden tener cualquier número de niveles, con organización Von Neumann o Harvard, y hay TLB, tablas de páginas multinivel y swap. Las latencias están modeladas, así que el AMAT medido se puede comparar con el calculado a mano.\n\nEl motor en Rust y la interfaz en Vue están totalmente separados y solo se comunican a través de Tauri, de modo que el motor se prueba sin la interfaz. Hay 776 tests automatizados (474 del motor y 302 de la interfaz), un 80% de cobertura de líneas en el motor y 7 ejercicios comprobados a mano contra la teoría.",
-      "ca": "missme és una eina d'escriptori per a estudiants d'arquitectura de computadors. Descrius una jerarquia de memòria, hi executes un programa RISC-V i inspecciones cada estructura mentre s'executa.\n\nLes caches poden tenir qualsevol nombre de nivells, amb organització Von Neumann o Harvard, i hi ha TLB, taules de pàgines multinivell i swap. Les latències estan modelades, de manera que l'AMAT mesurat es pot comparar amb el calculat a mà.\n\nEl motor en Rust i la interfície en Vue estan totalment separats i només es comuniquen a través de Tauri, així que el motor es prova sense la interfície. Hi ha 776 tests automatitzats (474 del motor i 302 de la interfície), un 80% de cobertura de línies al motor i 7 exercicis comprovats a mà contra la teoria."
+      "en": "missme is my final degree project, a desktop memory hierarchy simulator for computer architecture students. You write a program in RISC-V assembly, describe a cache hierarchy (with virtual memory if you want it), run the program on it and follow every memory access step by step.\n\nEach cache level has its own number of sets, block size and associativity, and the instruction and data caches can be separate (Harvard) or unified (Von Neumann). Replacement can be LRU, FIFO, LFU or random, and writes can be write-back or write-through, with or without write-allocate. Virtual memory adds a TLB, a multilevel page table, physical frames and swapping to disk.\n\nThe simulation advances one memory access or one instruction at a time, or runs until it hits a breakpoint, and breakpoints can be changed while it runs. There is a live view of every level, from the cache sets down to RAM and disk, and statistics per level: hits, misses, hit rate, cycles, AMAT, CPI and MPKI. Latencies are modelled, so the AMAT the simulator measures can be checked against the one a student works out by hand.\n\nThe engine is written in Rust and the interface in Vue 3 and TypeScript, and they talk only through Tauri, so the engine can be tested without any UI. It has 776 automated tests (474 for the engine and 302 for the interface, with 80% line coverage in the engine), and I checked 7 exercises by hand against the theory. RISC-V is the first supported language, and the interpreter is organised so that others can be added. The code is under the Apache 2.0 license.",
+      "es": "missme es mi trabajo de fin de grado, un simulador de escritorio de jerarquía de memoria para estudiantes de arquitectura de computadores. Escribes un programa en ensamblador RISC-V, describes una jerarquía de cachés (con memoria virtual si quieres), ejecutas el programa sobre ella y sigues cada acceso a memoria paso a paso.\n\nCada nivel de caché tiene su propio número de conjuntos, tamaño de bloque y asociatividad, y las cachés de instrucciones y de datos pueden ir separadas (Harvard) o unificadas (Von Neumann). El reemplazo puede ser LRU, FIFO, LFU o aleatorio, y la escritura write-back o write-through, con o sin write-allocate. La memoria virtual añade TLB, tabla de páginas multinivel, marcos físicos y swap a disco.\n\nLa simulación avanza de acceso en acceso o de instrucción en instrucción, o corre hasta llegar a un breakpoint, y los breakpoints se pueden cambiar mientras se ejecuta. Hay una vista en vivo de cada nivel, desde los conjuntos de la caché hasta la RAM y el disco, y estadísticas por nivel: aciertos, fallos, tasa de acierto, ciclos, AMAT, CPI y MPKI. Las latencias están modeladas, así que el AMAT que mide el simulador se puede contrastar con el que calcula a mano un estudiante.\n\nEl motor está escrito en Rust y la interfaz en Vue 3 y TypeScript, y solo se comunican a través de Tauri, de modo que el motor se puede probar sin ninguna interfaz. Tiene 776 tests automatizados (474 del motor y 302 de la interfaz, con un 80% de cobertura de líneas en el motor), y comprobé 7 ejercicios a mano contra la teoría. RISC-V es el primer lenguaje soportado, y el intérprete está organizado para que se puedan añadir otros. El código tiene licencia Apache 2.0.",
+      "ca": "missme és el meu treball de fi de grau, un simulador d'escriptori de jerarquia de memòria per a estudiants d'arquitectura de computadors. Escrius un programa en assemblador RISC-V, descrius una jerarquia de caches (amb memòria virtual si vols), hi executes el programa i segueixes cada accés a memòria pas a pas.\n\nCada nivell de cache té el seu propi nombre de conjunts, mida de bloc i associativitat, i les caches d'instruccions i de dades poden anar separades (Harvard) o unificades (Von Neumann). El reemplaçament pot ser LRU, FIFO, LFU o aleatori, i l'escriptura write-back o write-through, amb o sense write-allocate. La memòria virtual hi afegeix TLB, taula de pàgines multinivell, marcs físics i swap a disc.\n\nLa simulació avança d'accés en accés o d'instrucció en instrucció, o s'executa fins a arribar a un breakpoint, i els breakpoints es poden canviar mentre s'executa. Hi ha una vista en directe de cada nivell, des dels conjunts de la cache fins a la RAM i el disc, i estadístiques per nivell: encerts, fallades, taxa d'encert, cicles, AMAT, CPI i MPKI. Les latències estan modelades, de manera que l'AMAT que mesura el simulador es pot contrastar amb el que calcula a mà un estudiant.\n\nEl motor està escrit en Rust i la interfície en Vue 3 i TypeScript, i només es comuniquen a través de Tauri, així que el motor es pot provar sense cap interfície. Té 776 tests automatitzats (474 del motor i 302 de la interfície, amb un 80% de cobertura de línies al motor), i vaig comprovar 7 exercicis a mà contra la teoria. RISC-V és el primer llenguatge suportat, i l'intèrpret està organitzat perquè se n'hi puguin afegir d'altres. El codi té llicència Apache 2.0."
     },
     "start": "2026-05",
     "end": "2026-10",
@@ -24,14 +24,26 @@
         "url": "https://github.com/adriamg101/missme"
       }
     ],
+    "downloads": [
+      {
+        "label": {
+          "en": "Final degree project (PDF)",
+          "es": "Trabajo de fin de grado (PDF)",
+          "ca": "Treball de fi de grau (PDF)"
+        },
+        "file": "docs/tfg-missme.pdf"
+      }
+    ],
     "languages": [
       "Rust",
-      "TypeScript"
+      "TypeScript",
+      "RISC-V"
     ],
     "tools": [],
     "frameworks": [
       "Vue",
-      "Tauri"
+      "Tauri",
+      "Pinia"
     ],
     "home": true
   },
@@ -43,14 +55,14 @@
       "ca": "Sistema de replicació epidèmica multicapa"
     },
     "summary": {
-      "en": "Replicated key-value store with eventual consistency across seven nodes in three layers, with a live Vue dashboard.",
-      "es": "Almacén clave-valor replicado con consistencia eventual en siete nodos y tres capas, con un panel en vivo en Vue.",
-      "ca": "Magatzem clau-valor replicat amb consistència eventual en set nodes i tres capes, amb un tauler en directe en Vue."
+      "en": "Distributed Systems project in a team of two: a key-value store replicated across seven nodes in three layers, with eventual consistency and a live Vue dashboard.",
+      "es": "Proyecto de Sistemas Distribuidos en equipo de dos: un almacén clave-valor replicado en siete nodos y tres capas, con consistencia eventual y un panel en vivo en Vue.",
+      "ca": "Projecte de Sistemes Distribuïts en equip de dos: un magatzem clau-valor replicat en set nodes i tres capes, amb consistència eventual i un tauler en directe en Vue."
     },
     "description": {
-      "en": "A replicated key-value store with eventual consistency, written in Python. It runs seven nodes in three layers: writes enter the core layer and move up to layers 1 and 2.\n\nWrites in the core layer use Ricart-Agrawala distributed mutual exclusion, and the system includes a FIFO reader-writer lock. Layers 1 and 2 use main-backup replication, and data flows upward in flushes triggered by the number of writes and by time. Nodes talk over a custom binary TCP protocol.\n\nA Vue 3 dashboard shows the state of every node live over WebSockets.",
-      "es": "Un almacén clave-valor replicado con consistencia eventual, escrito en Python. Ejecuta siete nodos en tres capas: las escrituras entran en la capa core y suben a las capas 1 y 2.\n\nLas escrituras en la capa core usan exclusión mutua distribuida Ricart-Agrawala, y el sistema incluye un lock lector-escritor FIFO. Las capas 1 y 2 usan replicación principal-respaldo, y los datos suben mediante flushes que se disparan por número de escrituras y por tiempo. Los nodos se comunican con un protocolo binario propio sobre TCP.\n\nUn panel en Vue 3 muestra en vivo el estado de cada nodo por WebSockets.",
-      "ca": "Un magatzem clau-valor replicat amb consistència eventual, escrit en Python. Executa set nodes en tres capes: les escriptures entren a la capa core i pugen a les capes 1 i 2.\n\nLes escriptures a la capa core fan servir exclusió mútua distribuïda Ricart-Agrawala, i el sistema inclou un lock lector-escriptor FIFO. Les capes 1 i 2 fan servir replicació amb node principal i còpia de seguretat, i les dades pugen amb flushes que es disparen pel nombre d'escriptures i pel temps. Els nodes es comuniquen amb un protocol binari propi sobre TCP.\n\nUn tauler en Vue 3 mostra en directe l'estat de cada node per WebSockets."
+      "en": "A distributed key-value store with eventual consistency, written in Python for the Distributed Systems course in a team of two. Seven nodes are split into three layers. Writes enter the core layer and propagate upward to layers 1 and 2, and a write sent to an upper layer is first forwarded down to the core.\n\nIn the core, every write enters a critical section through Ricart-Agrawala distributed mutual exclusion and is then broadcast to the other core nodes. Once 10 writes are waiting to be propagated, the core sends them up to layer 1. Layers 1 and 2 use main-backup replication: the main node copies whatever it receives to its backups straight away, and layer 1 flushes to layer 2 every 10 seconds. Keys are versioned, so an overwrite can be followed from one layer to the next. The system also has a FIFO reader-writer lock.\n\nNodes talk over a custom binary protocol on TCP. The whole topology comes from a single JSON file, so the number of nodes per layer can change without touching the code, and nodes can run on different machines. A Vue 3 dashboard opens one WebSocket per node and shows every key with its value and version. It has a command panel for running transactions and reconnects on its own when a node restarts.",
+      "es": "Un almacén clave-valor distribuido con consistencia eventual, escrito en Python para la asignatura de Sistemas Distribuidos en un equipo de dos. Siete nodos se reparten en tres capas. Las escrituras entran en la capa core y se propagan hacia las capas 1 y 2, y una escritura enviada a una capa superior se reenvía primero al core.\n\nEn el core, cada escritura entra en una sección crítica mediante exclusión mutua distribuida Ricart-Agrawala y después se difunde al resto de nodos del core. Cuando hay 10 escrituras pendientes de propagar, el core las sube a la capa 1. Las capas 1 y 2 usan replicación principal-respaldo: el nodo principal copia al momento lo que recibe a sus respaldos, y la capa 1 hace flush a la capa 2 cada 10 segundos. Las claves tienen versión, así que una sobrescritura se puede seguir de una capa a otra. El sistema también tiene un lock lector-escritor FIFO.\n\nLos nodos se comunican con un protocolo binario propio sobre TCP. Toda la topología sale de un único archivo JSON, así que el número de nodos por capa puede cambiar sin tocar el código, y los nodos pueden ir en máquinas distintas. Un panel en Vue 3 abre un WebSocket por nodo y muestra cada clave con su valor y su versión. Tiene un panel de comandos para lanzar transacciones y se reconecta solo cuando un nodo se reinicia.",
+      "ca": "Un magatzem clau-valor distribuït amb consistència eventual, escrit en Python per a l'assignatura de Sistemes Distribuïts en un equip de dos. Set nodes es reparteixen en tres capes. Les escriptures entren a la capa core i es propaguen cap a les capes 1 i 2, i una escriptura enviada a una capa superior es reenvia primer al core.\n\nAl core, cada escriptura entra en una secció crítica amb exclusió mútua distribuïda Ricart-Agrawala i després es difon a la resta de nodes del core. Quan hi ha 10 escriptures pendents de propagar, el core les puja a la capa 1. Les capes 1 i 2 fan servir replicació principal-còpia de seguretat: el node principal copia al moment el que rep a les seves còpies, i la capa 1 fa flush a la capa 2 cada 10 segons. Les claus tenen versió, de manera que una sobreescriptura es pot seguir d'una capa a l'altra. El sistema també té un lock lector-escriptor FIFO.\n\nEls nodes es comuniquen amb un protocol binari propi sobre TCP. Tota la topologia surt d'un únic arxiu JSON, així que el nombre de nodes per capa pot canviar sense tocar el codi, i els nodes poden anar en màquines diferents. Un tauler en Vue 3 obre un WebSocket per node i mostra cada clau amb el seu valor i la seva versió. Té un panell de comandes per llançar transaccions i es reconnecta sol quan un node es reinicia."
     },
     "start": "2025-09",
     "end": "2026-06",
@@ -78,14 +90,14 @@
       "ca": "Servidors de processament d'arxius tolerants a fallades"
     },
     "summary": {
-      "en": "Four cooperating C processes with main-backup failover: a backup resumes a file transfer where the primary stopped.",
-      "es": "Cuatro procesos en C que cooperan con failover principal-respaldo: el respaldo retoma la transferencia donde la dejó el principal.",
-      "ca": "Quatre processos en C que cooperen amb failover principal-còpia de seguretat: la còpia reprèn la transferència on la va deixar el principal."
+      "en": "Operating Systems project in a team of two: four C processes with main-backup failover, where the backup resumes a file where the primary stopped.",
+      "es": "Proyecto de Sistemas Operativos en equipo de dos: cuatro procesos en C con failover principal-respaldo, donde el respaldo retoma el archivo donde lo dejó el principal.",
+      "ca": "Projecte de Sistemes Operatius en equip de dos: quatre processos en C amb failover principal-còpia de seguretat, on la còpia reprèn l'arxiu on el va deixar el principal."
     },
     "description": {
-      "en": "Four processes written in C cooperate over sockets: a client, an orchestrator that pairs clients with servers and tracks the primary, and two processing servers, one for audio and one for text.\n\nFiles are sent in frames with main-backup failover: after a crash, the backup resumes where the primary stopped. A child process of the orchestrator writes the logs through pipes.",
-      "es": "Cuatro procesos escritos en C cooperan por sockets: un cliente, un orquestador que empareja clientes con servidores y sigue al principal, y dos servidores de procesamiento, uno de audio y otro de texto.\n\nLos archivos se envían en tramas con failover principal-respaldo: tras una caída, el respaldo retoma donde se quedó el principal. Un proceso hijo del orquestador escribe los logs por pipes.",
-      "ca": "Quatre processos escrits en C cooperen per sockets: un client, un orquestrador que emparella clients amb servidors i segueix el principal, i dos servidors de processament, un d'àudio i un de text.\n\nEls arxius s'envien en trames amb failover principal-còpia de seguretat: després d'una caiguda, la còpia reprèn on s'havia quedat el principal. Un procés fill de l'orquestrador escriu els logs per pipes."
+      "en": "A project for the Operating Systems course, written in C in a team of two. Four processes cooperate over sockets: a client, an orchestrator that pairs clients with servers and keeps track of which server is the primary, and two processing servers, one for audio and one for text.\n\nFiles are sent in frames with main-backup failover. If the primary goes down, the backup carries on receiving or processing the file from the point where the primary stopped. Inside the orchestrator, a forked process writes the logs, which reach it through pipes.",
+      "es": "Un proyecto de la asignatura de Sistemas Operativos, escrito en C en un equipo de dos. Cuatro procesos cooperan por sockets: un cliente, un orquestador que empareja clientes con servidores y lleva la cuenta de qué servidor es el principal, y dos servidores de procesamiento, uno de audio y otro de texto.\n\nLos archivos se envían en tramas con failover principal-respaldo. Si el principal cae, el respaldo sigue recibiendo o procesando el archivo desde el punto en que se quedó el principal. Dentro del orquestador, un proceso creado con fork escribe los logs, que le llegan por pipes.",
+      "ca": "Un projecte de l'assignatura de Sistemes Operatius, escrit en C en un equip de dos. Quatre processos cooperen per sockets: un client, un orquestrador que emparella clients amb servidors i porta el compte de quin servidor és el principal, i dos servidors de processament, un d'àudio i un de text.\n\nEls arxius s'envien en trames amb failover principal-còpia de seguretat. Si el principal cau, la còpia continua rebent o processant l'arxiu des del punt on s'havia quedat el principal. Dins de l'orquestrador, un procés creat amb fork escriu els logs, que li arriben per pipes."
     },
     "start": "2024-09",
     "end": "2025-06",
@@ -104,14 +116,14 @@
       "ca": "Compilador de BeerCode"
     },
     "summary": {
-      "en": "Compiler in Java for BeerCode, a custom language. It generates MIPS assembly that runs in the MARS simulator.",
-      "es": "Compilador en Java para BeerCode, un lenguaje propio. Genera ensamblador MIPS que se ejecuta en el simulador MARS.",
-      "ca": "Compilador en Java per a BeerCode, un llenguatge propi. Genera ensamblador MIPS que s'executa al simulador MARS."
+      "en": "Compiler written in Java in a team of five for BeerCode, a joke language that reads like an order at a bar. It generates MIPS assembly that runs in the MARS simulator.",
+      "es": "Compilador escrito en Java en un equipo de cinco para BeerCode, un lenguaje de broma que se lee como un pedido en un bar. Genera ensamblador MIPS que se ejecuta en el simulador MARS.",
+      "ca": "Compilador escrit en Java en un equip de cinc per a BeerCode, un llenguatge de broma que es llegeix com una comanda en un bar. Genera assemblador MIPS que s'executa al simulador MARS."
     },
     "description": {
-      "en": "BeerCode is a small custom language, and this is the compiler we wrote for it in Java as a group. It does lexical, syntactic and semantic analysis, builds three address code, can optimize it, and generates MIPS assembly.\n\nThe lexer, the table-driven parser and the MIPS backend are written by hand. The generated assembly runs in the MARS simulator.",
-      "es": "BeerCode es un lenguaje propio pequeño, y este es el compilador que escribimos en Java en grupo. Hace análisis léxico, sintáctico y semántico, genera código de tres direcciones, puede optimizarlo y produce ensamblador MIPS.\n\nEl analizador léxico, el analizador sintáctico guiado por tabla y el backend MIPS están escritos a mano. El ensamblador generado se ejecuta en el simulador MARS.",
-      "ca": "BeerCode és un llenguatge propi petit, i aquest és el compilador que vam escriure en Java en grup. Fa anàlisi lèxica, sintàctica i semàntica, genera codi de tres adreces, el pot optimitzar i produeix ensamblador MIPS.\n\nL'analitzador lèxic, l'analitzador sintàctic guiat per taula i el backend MIPS estan escrits a mà. L'ensamblador generat s'executa al simulador MARS."
+      "en": "BeerCode is a small language whose programs read like an order at a bar. Types are drink sizes (a canya is an int, a litrona a long), statements are addressed to the Camarero and end with gracias, and variable names have to be beer brands. We wrote its compiler in Java in a team of five.\n\nEverything between the .beer source file and the assembly is written by hand. The compiler loads the grammar, computes the FIRST and FOLLOW sets and generates the parsing table. A table-driven parser then asks the scanner for tokens, builds the parse tree and fills the symbol table while it checks types, arguments and undefined symbols.\n\nThe parse tree is translated into three address code. An optional pass builds a control flow graph to remove dead code and pointless arithmetic, and a register manager turns the result into MIPS assembly that runs in the MARS simulator. The sample programs include a recursive Fibonacci and a factorial.",
+      "es": "BeerCode es un lenguaje pequeño cuyos programas se leen como un pedido en un bar. Los tipos son tamaños de bebida (una canya es un int, una litrona un long), las instrucciones se dirigen al Camarero y acaban en gracias, y los nombres de variable tienen que ser marcas de cerveza. Escribimos su compilador en Java en un equipo de cinco.\n\nTodo lo que hay entre el archivo fuente .beer y el ensamblador está escrito a mano. El compilador carga la gramática, calcula los conjuntos FIRST y FOLLOW y genera la tabla de análisis. Después, un analizador sintáctico guiado por tabla pide tokens al analizador léxico, construye el árbol sintáctico y rellena la tabla de símbolos mientras comprueba tipos, argumentos y símbolos no definidos.\n\nEl árbol se traduce a código de tres direcciones. Una pasada opcional construye un grafo de flujo de control para eliminar código muerto y operaciones aritméticas inútiles, y un gestor de registros convierte el resultado en ensamblador MIPS que se ejecuta en el simulador MARS. Entre los programas de ejemplo hay un Fibonacci recursivo y un factorial.",
+      "ca": "BeerCode és un llenguatge petit els programes del qual es llegeixen com una comanda en un bar. Els tipus són mides de beguda (una canya és un int, una litrona un long), les instruccions s'adrecen al Camarero i acaben en gracias, i els noms de variable han de ser marques de cervesa. Vam escriure el seu compilador en Java en un equip de cinc.\n\nTot el que hi ha entre l'arxiu font .beer i l'assemblador està escrit a mà. El compilador carrega la gramàtica, calcula els conjunts FIRST i FOLLOW i genera la taula d'anàlisi. Després, un analitzador sintàctic guiat per taula demana tokens a l'analitzador lèxic, construeix l'arbre sintàctic i omple la taula de símbols mentre comprova tipus, arguments i símbols no definits.\n\nL'arbre es tradueix a codi de tres adreces. Una passada opcional construeix un graf de flux de control per eliminar codi mort i operacions aritmètiques inútils, i un gestor de registres converteix el resultat en assemblador MIPS que s'executa al simulador MARS. Entre els programes d'exemple hi ha un Fibonacci recursiu i un factorial."
     },
     "start": "2024-09",
     "end": "2025-06",
@@ -122,10 +134,163 @@
       }
     ],
     "languages": [
-      "Java"
+      "Java",
+      "MIPS"
     ],
     "tools": [],
     "frameworks": [],
     "home": true
+  },
+  {
+    "id": "inkjet-printer-validation-stm32",
+    "title": {
+      "en": "Inkjet printer validation system (STM32F429)",
+      "es": "Sistema de validación para una impresora de inyección (STM32F429)",
+      "ca": "Sistema de validació per a una impressora d'injecció (STM32F429)"
+    },
+    "summary": {
+      "en": "Bare-metal C firmware for an STM32F429 board that captures, processes and plots in real time the position and sensor signals of an inkjet printer's print head.",
+      "es": "Firmware bare-metal en C para una placa STM32F429 que captura, procesa y dibuja en tiempo real las señales de posición y de los sensores del cabezal de una impresora de inyección.",
+      "ca": "Firmware bare-metal en C per a una placa STM32F429 que captura, processa i dibuixa en temps real els senyals de posició i dels sensors del capçal d'una impressora d'injecció."
+    },
+    "description": {
+      "en": "Bare-metal C firmware, with no RTOS, for the STM32F429I-DISCOVERY board. It is a validation rig for the print carriage of an inkjet printer, set as a project for a fictional company. It captures the carriage's position signals and the readings of two distance sensors that measure the gap between the nozzles and the paper, processes them and draws them on the LCD in real time. The encoder signals are simulated with GPIOs and timers, so no real printer is needed.\n\nThe first part handles the quadrature position encoder. Timers generate the A and B signals without the CPU, interrupts handle the edges of A, B and the index, and a timer output produces a 50 µs pulse on every edge. The firmware measures speed between edges with an error under 0.5%, flags a change of direction during printing and signals the end of the 60 cm print zone. ISR time and latency are measured with spare GPIOs and an oscilloscope.\n\nThe second part reads two ADC channels at 12 bits, triggered by the encoder every 200 µm, and moves the results to memory with DMA (3000 samples per sensor), including a double-buffered version. The samples are converted to millimetres, reduced to 300 values with a 5-sample moving average and summarised as the mean, maximum and minimum for each sensor.\n\nThe third part draws the two waveforms like an oscilloscope, with a graphics library written from scratch on top of the frame buffer and no vendor drawing functions. The frame buffer lives in external SDRAM set up through the FMC, the LTDC uses two layers with alpha blending so static elements are not redrawn, and the ILI9341 LCD controller is configured over SPI.",
+      "es": "Firmware bare-metal en C, sin RTOS, para la placa STM32F429I-DISCOVERY. Es un banco de validación para el carro de impresión de una impresora de inyección, planteado como proyecto para una empresa ficticia. Captura las señales de posición del carro y las lecturas de dos sensores de distancia que miden la separación entre los inyectores y el papel, las procesa y las dibuja en la pantalla LCD en tiempo real. Las señales del encoder se simulan con GPIOs y timers, así que no hace falta una impresora real.\n\nLa primera parte gestiona el encoder de posición en cuadratura. Los timers generan las señales A y B sin la CPU, las interrupciones atienden los flancos de A, B y el índice, y una salida de timer produce un pulso de 50 µs en cada flanco. El firmware mide la velocidad entre flancos con un error inferior al 0,5%, avisa de un cambio de sentido durante la impresión y señala el final de la zona de impresión de 60 cm. El tiempo y la latencia de las ISR se miden con GPIOs auxiliares y un osciloscopio.\n\nLa segunda parte lee dos canales del ADC a 12 bits, disparados por el encoder cada 200 µm, y lleva los resultados a memoria con DMA (3000 muestras por sensor), incluida una versión con doble buffer. Las muestras se convierten a milímetros, se reducen a 300 valores con una media móvil de 5 muestras y se resumen en la media, el máximo y el mínimo de cada sensor.\n\nLa tercera parte dibuja las dos formas de onda como un osciloscopio, con una librería gráfica escrita desde cero sobre el frame buffer y sin funciones de dibujo del fabricante. El frame buffer está en SDRAM externa configurada a través del FMC, el LTDC usa dos capas con alpha blending para no redibujar los elementos estáticos, y el controlador LCD ILI9341 se configura por SPI.",
+      "ca": "Firmware bare-metal en C, sense RTOS, per a la placa STM32F429I-DISCOVERY. És un banc de validació per al carro d'impressió d'una impressora d'injecció, plantejat com a projecte per a una empresa fictícia. Captura els senyals de posició del carro i les lectures de dos sensors de distància que mesuren la separació entre els injectors i el paper, els processa i els dibuixa a la pantalla LCD en temps real. Els senyals de l'encoder se simulen amb GPIOs i timers, així que no cal una impressora real.\n\nLa primera part gestiona l'encoder de posició en quadratura. Els timers generen els senyals A i B sense la CPU, les interrupcions atenen els flancs d'A, B i l'índex, i una sortida de timer produeix un pols de 50 µs a cada flanc. El firmware mesura la velocitat entre flancs amb un error inferior al 0,5%, avisa d'un canvi de sentit durant la impressió i senyala el final de la zona d'impressió de 60 cm. El temps i la latència de les ISR es mesuren amb GPIOs auxiliars i un oscil·loscopi.\n\nLa segona part llegeix dos canals de l'ADC a 12 bits, disparats per l'encoder cada 200 µm, i porta els resultats a memòria amb DMA (3000 mostres per sensor), inclosa una versió amb doble buffer. Les mostres es converteixen a mil·límetres, es redueixen a 300 valors amb una mitjana mòbil de 5 mostres i es resumeixen en la mitjana, el màxim i el mínim de cada sensor.\n\nLa tercera part dibuixa les dues formes d'ona com un oscil·loscopi, amb una llibreria gràfica escrita des de zero sobre el frame buffer i sense funcions de dibuix del fabricant. El frame buffer és a la SDRAM externa configurada a través del FMC, el LTDC fa servir dues capes amb alpha blending per no redibuixar els elements estàtics, i el controlador LCD ILI9341 es configura per SPI."
+    },
+    "start": "2025-09",
+    "end": "2025-12",
+    "languages": [
+      "C"
+    ],
+    "tools": [
+      "STM32CubeIDE"
+    ],
+    "frameworks": [],
+    "home": false
+  },
+  {
+    "id": "fsutils",
+    "title": {
+      "en": "fsutils: EXT2 and FAT16 reader",
+      "es": "fsutils: lector de EXT2 y FAT16",
+      "ca": "fsutils: lector d'EXT2 i FAT16"
+    },
+    "summary": {
+      "en": "Command-line tool in C, written in a team of two, that reads EXT2 and FAT16 disk images byte by byte without mounting them.",
+      "es": "Herramienta de línea de comandos en C, hecha en equipo de dos, que lee imágenes de disco EXT2 y FAT16 byte a byte sin montarlas.",
+      "ca": "Eina de línia d'ordres en C, feta en equip de dos, que llegeix imatges de disc EXT2 i FAT16 byte a byte sense muntar-les."
+    },
+    "description": {
+      "en": "fsutils is a command-line tool in plain C, with no external libraries, that reads EXT2 and FAT16 disk images at byte level without asking the operating system to mount them. It works out the filesystem type from the image itself. I wrote it with Carles Contreras.\n\n--info shows the metadata (the EXT2 superblock or the FAT16 BIOS Parameter Block), --tree prints the whole directory hierarchy like the Unix tree command, and --cat finds a file and prints it by following its chain of blocks or clusters.\n\nFor EXT2 it reads inodes and resolves direct, indirect, double indirect and triple indirect block pointers. For FAT16 it walks the allocation table and the cluster chains and resolves 8.3 file names. Each filesystem is a separate module behind its own header, so a new one can be added without touching the rest. It builds with a Makefile.",
+      "es": "fsutils es una herramienta de línea de comandos en C puro, sin librerías externas, que lee imágenes de disco EXT2 y FAT16 a nivel de byte sin pedir al sistema operativo que las monte. Deduce el tipo de sistema de archivos a partir de la propia imagen. La hice con Carles Contreras.\n\n--info muestra los metadatos (el superbloque de EXT2 o el BIOS Parameter Block de FAT16), --tree imprime toda la jerarquía de directorios como el comando tree de Unix, y --cat busca un archivo y lo imprime siguiendo su cadena de bloques o clústeres.\n\nEn EXT2 lee los inodos y resuelve los punteros a bloque directos, indirectos, doble indirectos y triple indirectos. En FAT16 recorre la tabla de asignación y las cadenas de clústeres y resuelve los nombres 8.3. Cada sistema de archivos es un módulo aparte con su propia cabecera, así que se puede añadir uno nuevo sin tocar el resto. Se compila con un Makefile.",
+      "ca": "fsutils és una eina de línia d'ordres en C pur, sense llibreries externes, que llegeix imatges de disc EXT2 i FAT16 a nivell de byte sense demanar al sistema operatiu que les munti. Dedueix el tipus de sistema de fitxers a partir de la mateixa imatge. La vaig fer amb Carles Contreras.\n\n--info mostra les metadades (el superbloc d'EXT2 o el BIOS Parameter Block de FAT16), --tree imprimeix tota la jerarquia de directoris com l'ordre tree d'Unix, i --cat busca un fitxer i l'imprimeix seguint la seva cadena de blocs o clústers.\n\nA EXT2 llegeix els inodes i resol els punters a bloc directes, indirectes, doble indirectes i triple indirectes. A FAT16 recorre la taula d'assignació i les cadenes de clústers i resol els noms 8.3. Cada sistema de fitxers és un mòdul a part amb la seva pròpia capçalera, així que se'n pot afegir un de nou sense tocar la resta. Es compila amb un Makefile."
+    },
+    "start": "2023-09",
+    "end": "2024-06",
+    "languages": [
+      "C"
+    ],
+    "tools": [
+      "CMake"
+    ],
+    "frameworks": [],
+    "home": false
+  },
+  {
+    "id": "glmxbot",
+    "title": {
+      "en": "GreenLandMXBot",
+      "es": "GreenLandMXBot",
+      "ca": "GreenLandMXBot"
+    },
+    "summary": {
+      "en": "Spanish-language customer service chatbot for a motorcycle gear shop, built in Python with a classic NLP pipeline instead of an LLM.",
+      "es": "Chatbot de atención al cliente en castellano para una tienda de equipamiento de moto, hecho en Python con un pipeline clásico de NLP en lugar de un LLM.",
+      "ca": "Xatbot d'atenció al client en castellà per a una botiga d'equipament de moto, fet en Python amb un pipeline clàssic de NLP en lloc d'un LLM."
+    },
+    "description": {
+      "en": "GreenLandMXBot is a customer service chatbot in Spanish for a motorcycle gear shop. It answers questions about stock, budgets, product comparisons, replacements, payment, shipping, promotions and account help, using a classic NLP pipeline and no LLM.\n\nEach message is spell-checked with LanguageTool and then lemmatized with spaCy, which also drops stop words and punctuation. A TF-IDF vectorizer feeds a Multinomial Naive Bayes classifier that picks the intent. The bot then compares the message with the training sentences for that intent using spaCy vector similarity, and if the best match scores below 0.6 it asks the user to rephrase instead of guessing.\n\nEach intent goes to its own handler. The replacement handler, for example, asks for a brand, a maximum price and a colour and then lists the matching products. The product catalogue is synthetic and generated with Faker.",
+      "es": "GreenLandMXBot es un chatbot de atención al cliente en castellano para una tienda de equipamiento de moto. Responde preguntas sobre stock, presupuestos, comparativas de productos, cambios, pago, envíos, promociones y ayuda con la cuenta, con un pipeline clásico de NLP y sin LLM.\n\nCada mensaje pasa por el corrector de LanguageTool y después se lematiza con spaCy, que también quita las stop words y la puntuación. Un vectorizador TF-IDF alimenta un clasificador Multinomial Naive Bayes que elige la intención. Después el bot compara el mensaje con las frases de entrenamiento de esa intención usando la similitud de vectores de spaCy, y si la mejor coincidencia baja de 0,6 pide al usuario que lo reformule en lugar de adivinar.\n\nCada intención va a su propio manejador. El de cambios, por ejemplo, pregunta la marca, el precio máximo y el color y luego lista los productos que encajan. El catálogo de productos es sintético y está generado con Faker.",
+      "ca": "GreenLandMXBot és un xatbot d'atenció al client en castellà per a una botiga d'equipament de moto. Respon preguntes sobre estoc, pressupostos, comparatives de productes, canvis, pagament, enviaments, promocions i ajuda amb el compte, amb un pipeline clàssic de NLP i sense LLM.\n\nCada missatge passa pel corrector de LanguageTool i després es lematitza amb spaCy, que també treu les stop words i la puntuació. Un vectoritzador TF-IDF alimenta un classificador Multinomial Naive Bayes que tria la intenció. Després el bot compara el missatge amb les frases d'entrenament d'aquella intenció fent servir la similitud de vectors de spaCy, i si la millor coincidència baixa de 0,6 demana a l'usuari que el reformuli en lloc d'endevinar.\n\nCada intenció va al seu propi gestor. El de canvis, per exemple, pregunta la marca, el preu màxim i el color i després llista els productes que hi encaixen. El catàleg de productes és sintètic i està generat amb Faker."
+    },
+    "start": "2024-09",
+    "end": "2025-06",
+    "languages": [
+      "Python"
+    ],
+    "tools": [
+      "LanguageTool",
+      "Faker"
+    ],
+    "frameworks": [
+      "spaCy",
+      "scikit-learn",
+      "pandas"
+    ],
+    "home": false
+  },
+  {
+    "id": "distributed-mutual-exclusion",
+    "title": {
+      "en": "Distributed mutual exclusion",
+      "es": "Exclusión mutua distribuida",
+      "ca": "Exclusió mútua distribuïda"
+    },
+    "summary": {
+      "en": "Lamport's and Ricart-Agrawala's mutual exclusion algorithms in Python, running on a token ring of two coordinator processes over raw TCP sockets.",
+      "es": "Los algoritmos de exclusión mutua de Lamport y de Ricart-Agrawala en Python, sobre un anillo de token de dos procesos coordinadores y sockets TCP.",
+      "ca": "Els algorismes d'exclusió mútua de Lamport i de Ricart-Agrawala en Python, sobre un anell de token de dos processos coordinadors i sockets TCP."
+    },
+    "description": {
+      "en": "A Python implementation of two distributed mutual exclusion algorithms, Lamport's and Ricart-Agrawala's, built for a distributed systems course. It uses only the standard library, with raw TCP sockets and a custom binary protocol.\n\nTwo heavy processes pass a token back and forth, and each one owns three light processes. When a heavy process gets the token it activates its lights, waits until all of them answer DONE and then passes the token on. Lights only talk to their own heavy process, which reads the destination of each frame and forwards it. Once activated, the lights compete for the critical section, with Lamport's algorithm on one side and Ricart-Agrawala on the other.\n\nIn Lamport's version each light keeps a logical clock and a request queue ordered by timestamp, and it enters when every peer has replied and its own request is at the head of the queue. Ricart-Agrawala defers replies instead and needs no release message. Frames are packed in network byte order and wait for an ACK, with up to three resends on error. Processes retry their connections, so they can be started in any order.",
+      "es": "Una implementación en Python de dos algoritmos de exclusión mutua distribuida, el de Lamport y el de Ricart-Agrawala, hecha para una asignatura de sistemas distribuidos. Solo usa la librería estándar, con sockets TCP y un protocolo binario propio.\n\nDos procesos pesados se pasan un token, y cada uno tiene tres procesos ligeros. Cuando un proceso pesado recibe el token activa sus ligeros, espera a que todos respondan DONE y pasa el token. Los ligeros solo hablan con su proceso pesado, que lee el destino de cada trama y la reenvía. Una vez activados, los ligeros compiten por la sección crítica, con el algoritmo de Lamport en un lado y Ricart-Agrawala en el otro.\n\nEn la versión de Lamport cada ligero mantiene un reloj lógico y una cola de peticiones ordenada por marca de tiempo, y entra cuando todos los demás han respondido y su petición está la primera de la cola. Ricart-Agrawala, en cambio, aplaza las respuestas y no necesita mensaje de liberación. Las tramas se empaquetan en orden de red y esperan un ACK, con hasta tres reenvíos si hay error. Los procesos reintentan la conexión, así que se pueden arrancar en cualquier orden.",
+      "ca": "Una implementació en Python de dos algorismes d'exclusió mútua distribuïda, el de Lamport i el de Ricart-Agrawala, feta per a una assignatura de sistemes distribuïts. Només fa servir la llibreria estàndard, amb sockets TCP i un protocol binari propi.\n\nDos processos pesants es passen un token, i cadascun té tres processos lleugers. Quan un procés pesant rep el token activa els seus lleugers, espera que tots responguin DONE i passa el token. Els lleugers només parlen amb el seu procés pesant, que llegeix el destí de cada trama i la reenvia. Un cop activats, els lleugers competeixen per la secció crítica, amb l'algorisme de Lamport en un costat i Ricart-Agrawala a l'altre.\n\nA la versió de Lamport cada lleuger manté un rellotge lògic i una cua de peticions ordenada per marca de temps, i entra quan tots els altres han respost i la seva petició és la primera de la cua. Ricart-Agrawala, en canvi, ajorna les respostes i no necessita missatge d'alliberament. Les trames s'empaqueten en ordre de xarxa i esperen un ACK, amb fins a tres reenviaments si hi ha error. Els processos reintenten la connexió, així que es poden arrencar en qualsevol ordre."
+    },
+    "start": "2025-09",
+    "end": "2026-06",
+    "languages": [
+      "Python"
+    ],
+    "tools": [],
+    "frameworks": [],
+    "home": false
+  },
+  {
+    "id": "bookworm",
+    "title": {
+      "en": "Bookworm",
+      "es": "Bookworm",
+      "ca": "Bookworm"
+    },
+    "summary": {
+      "en": "Final project for Web Programming II in a team of three: a PHP web app to browse books, rate and review them, and talk with other readers in forums.",
+      "es": "Proyecto final de Programación Web II en equipo de tres: una aplicación web en PHP para explorar libros, puntuarlos y reseñarlos, y hablar con otros lectores en foros.",
+      "ca": "Projecte final de Programació Web II en equip de tres: una aplicació web en PHP per explorar llibres, puntuar-los i ressenyar-los, i parlar amb altres lectors en fòrums."
+    },
+    "description": {
+      "en": "Bookworm is a web app for readers. You can browse a catalogue, rate and review books, and talk with other readers in forums. It was the final project for Web Programming II at La Salle, and I built it with Pol Cuadriello and Ignasi Ràfols.\n\nThe backend is PHP 8 with Slim 4 and dependency injection, the views are Twig templates with hand-written CSS and jQuery, and the data lives in MySQL through PDO. Controllers depend on repository interfaces, and the container decides which MySQL implementation to inject, so no controller touches the database directly. Books can be added by hand or by ISBN, and with an ISBN the app fetches the title, author, description and cover from the Open Library API.\n\nThe forums load their discussions and posts from the app's own REST API, which returns JSON, requires a logged-in user and is documented with Swagger. Everything runs in Docker Compose with PHP-FPM, Nginx, MySQL and phpMyAdmin, and Cypress is set up for end-to-end tests.",
+      "es": "Bookworm es una aplicación web para lectores. Puedes explorar un catálogo, puntuar y reseñar libros y hablar con otros lectores en foros. Fue el proyecto final de Programación Web II en La Salle, y lo hice con Pol Cuadriello e Ignasi Ràfols.\n\nEl backend es PHP 8 con Slim 4 e inyección de dependencias, las vistas son plantillas Twig con CSS escrito a mano y jQuery, y los datos están en MySQL a través de PDO. Los controladores dependen de interfaces de repositorio, y el contenedor decide qué implementación de MySQL inyectar, así que ningún controlador toca la base de datos directamente. Los libros se pueden añadir a mano o por ISBN, y con un ISBN la aplicación obtiene el título, el autor, la descripción y la portada de la API de Open Library.\n\nLos foros cargan sus discusiones y mensajes desde la propia API REST de la aplicación, que devuelve JSON, exige haber iniciado sesión y está documentada con Swagger. Todo corre en Docker Compose con PHP-FPM, Nginx, MySQL y phpMyAdmin, y Cypress está configurado para tests end-to-end.",
+      "ca": "Bookworm és una aplicació web per a lectors. Pots explorar un catàleg, puntuar i ressenyar llibres i parlar amb altres lectors en fòrums. Va ser el projecte final de Programació Web II a La Salle, i el vaig fer amb Pol Cuadriello i Ignasi Ràfols.\n\nEl backend és PHP 8 amb Slim 4 i injecció de dependències, les vistes són plantilles Twig amb CSS escrit a mà i jQuery, i les dades són a MySQL a través de PDO. Els controladors depenen d'interfícies de repositori, i el contenidor decideix quina implementació de MySQL injectar, així que cap controlador no toca la base de dades directament. Els llibres es poden afegir a mà o per ISBN, i amb un ISBN l'aplicació obté el títol, l'autor, la descripció i la portada de l'API d'Open Library.\n\nEls fòrums carreguen les seves discussions i missatges des de la mateixa API REST de l'aplicació, que retorna JSON, demana haver iniciat sessió i està documentada amb Swagger. Tot s'executa a Docker Compose amb PHP-FPM, Nginx, MySQL i phpMyAdmin, i Cypress està configurat per a tests end-to-end."
+    },
+    "start": "2024-09",
+    "end": "2025-06",
+    "languages": [
+      "PHP",
+      "JavaScript"
+    ],
+    "tools": [
+      "MySQL",
+      "Docker",
+      "Nginx",
+      "Composer",
+      "Cypress"
+    ],
+    "frameworks": [
+      "Slim",
+      "Twig",
+      "jQuery"
+    ],
+    "home": false
   }
 ]

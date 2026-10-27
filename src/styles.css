@@ -726,6 +726,7 @@ main:focus {
   margin: 0;
   text-align: left;
   color: var(--fg);
+  white-space: pre-line;
 }
 
 /* entry cards: one column, two from tablet width */

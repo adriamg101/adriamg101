@@ -18,10 +18,12 @@
     },
     "languages": [],
     "tools": [
-      "Proxmox"
+      "Proxmox",
+      "Docker",
+      "Linux"
     ],
     "frameworks": [],
-    "home": false
+    "home": true
   },
   {
     "id": "corne-keyboard-firmware",
@@ -40,10 +42,12 @@
       "es": "Firmware para mi teclado dividido Corne.",
       "ca": "Firmware per al meu teclat dividit Corne."
     },
-    "languages": [],
+    "languages": [
+      "C++"
+    ],
     "tools": [],
     "frameworks": [],
-    "home": false
+    "home": true
   },
   {
     "id": "retro-console-batocera",
@@ -64,8 +68,8 @@
     },
     "languages": [],
     "tools": [
-      "Batocera",
-      "Raspberry Pi"
+      "Raspberry Pi",
+      "Linux"
     ],
     "frameworks": [],
     "home": false
@@ -89,9 +93,7 @@
     },
     "languages": [],
     "tools": [
-      "Linux",
-      "Steam",
-      "Proton"
+      "Linux"
     ],
     "frameworks": [],
     "home": false

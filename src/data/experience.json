@@ -1,31 +1,95 @@
 [
   {
-    "id": "teaching-assistant",
+    "id": "ta-operating-systems",
     "title": {
-      "en": "Teaching Assistant",
-      "es": "Asistente de docencia",
-      "ca": "Assistent docent"
+      "en": "Teaching Assistant: Operating Systems",
+      "es": "Asistente de docencia: Sistemas Operativos",
+      "ca": "Assistent docent: Sistemes Operatius"
     },
     "organization": "La Salle, Universitat Ramon Llull",
     "role": {
-      "en": "Teaching assistant, Advanced Programming and Data Structures (Java) and Operating Systems",
-      "es": "Asistente de Programación Avanzada y Estructuras de Datos (Java) y de Sistemas Operativos",
-      "ca": "Assistent de Programació Avançada i Estructures de Dades (Java) i de Sistemes Operatius"
+      "en": "Teaching assistant, Operating Systems (C)",
+      "es": "Asistente de docencia, Sistemas Operativos (C)",
+      "ca": "Assistent docent, Sistemes Operatius (C)"
     },
     "summary": {
-      "en": "Teaching assistant for Advanced Programming and Data Structures (2023 to 2026) and Operating Systems (2025 to 2026), with about 120 students per course.",
-      "es": "Asistente de Programación Avanzada y Estructuras de Datos (2023 a 2026) y de Sistemas Operativos (2025 a 2026), con unos 120 estudiantes por curso.",
-      "ca": "Assistent de Programació Avançada i Estructures de Dades (2023 a 2026) i de Sistemes Operatius (2025 a 2026), amb uns 120 estudiants per curs."
+      "en": "Teaching assistant for Operating Systems in 2025/26, about 120 students. I wrote 8 of the 30 lab exercises of the 2026 course.",
+      "es": "Asistente de Sistemas Operativos en el curso 2025/26, con unos 120 estudiantes. Escribí 8 de las 30 prácticas de laboratorio del curso 2026.",
+      "ca": "Assistent de Sistemes Operatius el curs 2025/26, amb uns 120 estudiants. Vaig escriure 8 de les 30 pràctiques de laboratori del curs 2026."
     },
     "description": {
-      "en": "I was a teaching assistant for Advanced Programming and Data Structures (PAED, in Java) from 2023 to 2026 and for Operating Systems in 2025 and 2026, with about 120 students per course. The Operating Systems professor chose me for that course.\n\nI designed and implemented 8 of the 30 lab assignments of the 2026/27 Operating Systems course: signals, threads, fork, sockets, select, mutexes, semaphores, and shared memory with pipes.\n\nI answered questions in and outside the lab, graded submissions and projects, prepared material and gave around 5 full one-hour classes.",
-      "es": "Fui asistente de Programación Avanzada y Estructuras de Datos (PAED, en Java) de 2023 a 2026 y de Sistemas Operativos en 2025 y 2026, con unos 120 estudiantes por curso. El profesor de Sistemas Operativos me eligió para esa asignatura.\n\nDiseñé e implementé 8 de las 30 prácticas de laboratorio del curso 2026/27 de Sistemas Operativos: señales, hilos, fork, sockets, select, mutex, semáforos y memoria compartida con pipes.\n\nResolví dudas dentro y fuera del laboratorio, corregí entregas y proyectos, preparé material y di unas 5 clases completas de una hora.",
-      "ca": "Vaig ser assistent de Programació Avançada i Estructures de Dades (PAED, en Java) del 2023 al 2026 i de Sistemes Operatius el 2025 i el 2026, amb uns 120 estudiants per curs. El professor de Sistemes Operatius em va escollir per a aquesta assignatura.\n\nVaig dissenyar i implementar 8 de les 30 pràctiques de laboratori del curs 2026/27 de Sistemes Operatius: senyals, fils, fork, sockets, select, mutex, semàfors i memòria compartida amb pipes.\n\nVaig resoldre dubtes dins i fora del laboratori, vaig corregir lliuraments i projectes, vaig preparar material i vaig fer unes 5 classes completes d'una hora."
+      "en": "In the 2025/26 academic year I was a teaching assistant for Operating Systems, a C course with about 120 students. The position has a selection process, and the professor of the course chose me for it. A university scholarship covered it.\n\nI designed and implemented 8 of the 30 lab exercises that students are working through in the 2026 course. Between them they cover signals, threads, fork, sockets, select, mutexes, semaphores, and shared memory with pipes.\n\nDuring the year I answered technical questions in and out of the lab and graded assignments and projects. I also gave a one-hour lecture on sockets.",
+      "es": "En el curso 2025/26 fui asistente de docencia de Sistemas Operativos, una asignatura en C con unos 120 estudiantes. El puesto tiene un proceso de selección, y el profesor de la asignatura me eligió. Lo cubrió una beca de la universidad.\n\nDiseñé e implementé 8 de las 30 prácticas de laboratorio que los estudiantes están haciendo en el curso 2026. Entre todas tocan señales, hilos, fork, sockets, select, mutex, semáforos y memoria compartida con pipes.\n\nDurante el curso resolví dudas técnicas dentro y fuera del laboratorio y corregí entregas y proyectos. También di una clase de una hora sobre sockets.",
+      "ca": "El curs 2025/26 vaig ser assistent docent de Sistemes Operatius, una assignatura en C amb uns 120 estudiants. El lloc té un procés de selecció, i el professor de l'assignatura em va escollir. El va cobrir una beca de la universitat.\n\nVaig dissenyar i implementar 8 de les 30 pràctiques de laboratori que els estudiants estan fent el curs 2026. Entre totes toquen senyals, fils, fork, sockets, select, mutex, semàfors i memòria compartida amb pipes.\n\nDurant el curs vaig resoldre dubtes tècnics dins i fora del laboratori i vaig corregir lliuraments i projectes. També vaig fer una classe d'una hora sobre sockets."
+    },
+    "start": "2025-09",
+    "end": "2026-09",
+    "languages": [
+      "C"
+    ],
+    "tools": [
+      "CMake"
+    ],
+    "frameworks": [],
+    "home": true
+  },
+  {
+    "id": "ta-advanced-programming-data-structures",
+    "title": {
+      "en": "Teaching Assistant: Advanced Programming and Data Structures",
+      "es": "Asistente de docencia: Programación Avanzada y Estructuras de Datos",
+      "ca": "Assistent docent: Programació Avançada i Estructures de Dades"
+    },
+    "organization": "La Salle, Universitat Ramon Llull",
+    "role": {
+      "en": "Teaching assistant, Advanced Programming and Data Structures (PAED, Java)",
+      "es": "Asistente de docencia, Programación Avanzada y Estructuras de Datos (PAED, Java)",
+      "ca": "Assistent docent, Programació Avançada i Estructures de Dades (PAED, Java)"
+    },
+    "summary": {
+      "en": "Teaching assistant for Advanced Programming and Data Structures (Java) from 2023 to 2026, about 120 students each year.",
+      "es": "Asistente de Programación Avanzada y Estructuras de Datos (Java) de 2023 a 2026, con unos 120 estudiantes cada año.",
+      "ca": "Assistent de Programació Avançada i Estructures de Dades (Java) del 2023 al 2026, amb uns 120 estudiants cada any."
+    },
+    "description": {
+      "en": "From 2023 to 2026 I was a teaching assistant for Advanced Programming and Data Structures (PAED), a Java course with about 120 students each year. The first year was a collaboration with the department, and after that a university scholarship covered the position.\n\nI answered technical questions in and out of the lab, graded assignments and projects, and prepared teaching material. I also gave four one-hour lectures, two on mergesort and two on B-trees.",
+      "es": "De 2023 a 2026 fui asistente de docencia de Programación Avanzada y Estructuras de Datos (PAED), una asignatura en Java con unos 120 estudiantes cada año. El primer año fue una colaboración con el departamento, y a partir de ahí el puesto lo cubrió una beca de la universidad.\n\nResolví dudas técnicas dentro y fuera del laboratorio, corregí entregas y proyectos y preparé material docente. También di cuatro clases de una hora, dos sobre mergesort y dos sobre árboles B.",
+      "ca": "Del 2023 al 2026 vaig ser assistent docent de Programació Avançada i Estructures de Dades (PAED), una assignatura en Java amb uns 120 estudiants cada any. El primer any va ser una col·laboració amb el departament, i a partir d'aleshores el lloc el va cobrir una beca de la universitat.\n\nVaig resoldre dubtes tècnics dins i fora del laboratori, vaig corregir lliuraments i projectes i vaig preparar material docent. També vaig fer quatre classes d'una hora, dues sobre mergesort i dues sobre arbres B."
     },
     "start": "2023-09",
     "end": "2026-09",
     "languages": [
       "Java"
+    ],
+    "tools": [],
+    "frameworks": [],
+    "home": true
+  },
+  {
+    "id": "ta-advanced-operating-systems",
+    "title": {
+      "en": "Teaching Assistant: Advanced Operating Systems",
+      "es": "Asistente de docencia: Sistemas Operativos Avanzados",
+      "ca": "Assistent docent: Sistemes Operatius Avançats"
+    },
+    "organization": "La Salle, Universitat Ramon Llull",
+    "role": {
+      "en": "Teaching assistant, Advanced Operating Systems",
+      "es": "Asistente de docencia, Sistemas Operativos Avanzados",
+      "ca": "Assistent docent, Sistemes Operatius Avançats"
+    },
+    "summary": {
+      "en": "Teaching assistant for Advanced Operating Systems.",
+      "es": "Asistente de docencia de Sistemas Operativos Avanzados.",
+      "ca": "Assistent docent de Sistemes Operatius Avançats."
+    },
+    "description": {
+      "en": "Teaching assistant for Advanced Operating Systems at La Salle.",
+      "es": "Asistente de docencia de Sistemas Operativos Avanzados en La Salle.",
+      "ca": "Assistent docent de Sistemes Operatius Avançats a La Salle."
+    },
+    "languages": [
+      "C"
     ],
     "tools": [],
     "frameworks": [],
@@ -45,18 +109,20 @@
       "ca": "Col·laborador a la línia de recerca en programari"
     },
     "summary": {
-      "en": "Took part in a systematic literature review on green code and sustainable software (2014 to 2024). Not published yet.",
-      "es": "Participé en una revisión sistemática de la literatura sobre green code y software sostenible (2014 a 2024). Aún no está publicada.",
-      "ca": "Vaig participar en una revisió sistemàtica de la literatura sobre green code i programari sostenible (2014 a 2024). Encara no està publicada."
+      "en": "Took part in a systematic literature review on green code (2014 to 2024). I analysed about 40 of the papers. Not published yet.",
+      "es": "Participé en una revisión sistemática de la literatura sobre green code (2014 a 2024). Analicé unos 40 artículos. Aún no está publicada.",
+      "ca": "Vaig participar en una revisió sistemàtica de la literatura sobre green code (2014 a 2024). Vaig analitzar uns 40 articles. Encara no està publicada."
     },
     "description": {
-      "en": "I took part in a systematic literature review on green code and sustainable software, covering 2014 to 2024. The group screened more than 2,000 articles and read 120 in full, and I analyzed about 40 of them.\n\nI also attended the group's seminars. The review has not been published yet.",
-      "es": "Participé en una revisión sistemática de la literatura sobre green code y software sostenible, que cubre de 2014 a 2024. El grupo cribó más de 2.000 artículos y leyó 120 completos, y yo analicé unos 40.\n\nTambién asistí a los seminarios del grupo. La revisión aún no se ha publicado.",
-      "ca": "Vaig participar en una revisió sistemàtica de la literatura sobre green code i programari sostenible, que cobreix del 2014 al 2024. El grup va garbellar més de 2.000 articles i en va llegir 120 complets, i jo n'he analitzat uns 40.\n\nTambé vaig assistir als seminaris del grup. La revisió encara no s'ha publicat."
+      "en": "With the software research line at La Salle I took part in a systematic literature review on green code, covering papers published between 2014 and 2024. The group screened more than 2,000 papers and read 120 of them in full. I analysed about 40 of those.\n\nI also attended the research group's seminars. The review has not been published yet.",
+      "es": "Con la línea de investigación en software de La Salle participé en una revisión sistemática de la literatura sobre green code, con artículos publicados entre 2014 y 2024. El grupo cribó más de 2.000 artículos y leyó 120 completos. Yo analicé unos 40 de ellos.\n\nTambién asistí a los seminarios del grupo de investigación. La revisión aún no se ha publicado.",
+      "ca": "Amb la línia de recerca en programari de La Salle vaig participar en una revisió sistemàtica de la literatura sobre green code, amb articles publicats entre el 2014 i el 2024. El grup va garbellar més de 2.000 articles i en va llegir 120 complets. Jo en vaig analitzar uns 40.\n\nTambé vaig assistir als seminaris del grup de recerca. La revisió encara no s'ha publicat."
     },
     "start": "2024-09",
     "end": "2026-06",
-    "languages": [],
+    "languages": [
+      "C++"
+    ],
     "tools": [],
     "frameworks": [],
     "home": true

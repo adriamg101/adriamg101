@@ -13,24 +13,51 @@
       "ca": "Grau en Enginyeria Informàtica"
     },
     "summary": {
-      "en": "BSc in Computer Engineering at La Salle, Universitat Ramon Llull (2022 to 2026).",
-      "es": "Grado en Ingeniería Informática en La Salle, Universitat Ramon Llull (2022 a 2026).",
-      "ca": "Grau en Enginyeria Informàtica a La Salle, Universitat Ramon Llull (2022 a 2026)."
+      "en": "BSc in Computer Engineering at La Salle, Universitat Ramon Llull (2021 to 2026).",
+      "es": "Grado en Ingeniería Informática en La Salle, Universitat Ramon Llull (2021 a 2026).",
+      "ca": "Grau en Enginyeria Informàtica a La Salle, Universitat Ramon Llull (2021 a 2026)."
     },
     "description": {
       "en": "BSc in Computer Engineering at La Salle, Universitat Ramon Llull. Subjects I would highlight are Operating Systems, Advanced Programming and Data Structures, Computer Architecture and Distributed Systems.",
       "es": "Grado en Ingeniería Informática en La Salle, Universitat Ramon Llull. Destacaría las asignaturas de Sistemas Operativos, Programación Avanzada y Estructuras de Datos, Arquitectura de Computadores y Sistemas Distribuidos.",
       "ca": "Grau en Enginyeria Informàtica a La Salle, Universitat Ramon Llull. Destacaria les assignatures de Sistemes Operatius, Programació Avançada i Estructures de Dades, Arquitectura de Computadors i Sistemes Distribuïts."
     },
-    "start": "2022-09",
+    "start": "2021-09",
     "end": "2026-10",
     "languages": [
+      "Rust",
       "Java",
       "C",
-      "Python"
+      "C#",
+      "C++",
+      "Python",
+      "TypeScript",
+      "JavaScript",
+      "PHP",
+      "Bash"
     ],
-    "tools": [],
-    "frameworks": [],
+    "tools": [
+      "PostgreSQL",
+      "SQLite",
+      "Docker",
+      "Git",
+      "npm",
+      "CMake",
+      "AWS",
+      "Neovim",
+      "VS Code",
+      "IntelliJ IDEA",
+      "AI coding assistants",
+      "Linux",
+      "Windows"
+    ],
+    "frameworks": [
+      "Vue",
+      "React",
+      "Tauri",
+      "HTML",
+      "CSS"
+    ],
     "home": true
   },
   {
@@ -84,8 +111,12 @@
       "es": "Curso intensivo de videojuegos en la Universitat de Barcelona.",
       "ca": "Curs intensiu de videojocs a la Universitat de Barcelona."
     },
-    "languages": [],
-    "tools": [],
+    "languages": [
+      "C#"
+    ],
+    "tools": [
+      "Unity"
+    ],
     "frameworks": [],
     "home": false
   }
