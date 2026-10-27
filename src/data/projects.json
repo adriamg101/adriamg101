@@ -1,0 +1,131 @@
+[
+  {
+    "id": "missme",
+    "title": {
+      "en": "missme",
+      "es": "missme",
+      "ca": "missme"
+    },
+    "summary": {
+      "en": "Memory hierarchy simulator for computer architecture students. Runs RISC-V programs on configurable caches, TLB, page tables and swap.",
+      "es": "Simulador de jerarquía de memoria para estudiantes de arquitectura de computadores. Ejecuta programas RISC-V sobre cachés, TLB, tablas de páginas y swap configurables.",
+      "ca": "Simulador de jerarquia de memòria per a estudiants d'arquitectura de computadors. Executa programes RISC-V sobre caches, TLB, taules de pàgines i swap configurables."
+    },
+    "description": {
+      "en": "missme is a desktop tool for computer architecture students. You describe a memory hierarchy, run a RISC-V program on it and inspect every structure while it runs.\n\nCaches can have any number of levels, in a Von Neumann or Harvard layout, and there is a TLB, multilevel page tables and swap. Latencies are modeled, so the measured AMAT can be compared with the one worked out by hand.\n\nThe Rust engine and the Vue interface are fully separate and talk only through Tauri, so the engine is tested without the UI. There are 776 automated tests (474 for the engine and 302 for the interface), 80% line coverage in the engine, and 7 exercises checked by hand against the theory.",
+      "es": "missme es una herramienta de escritorio para estudiantes de arquitectura de computadores. Describes una jerarquía de memoria, ejecutas un programa RISC-V sobre ella e inspeccionas cada estructura mientras corre.\n\nLas cachés pueden tener cualquier número de niveles, con organización Von Neumann o Harvard, y hay TLB, tablas de páginas multinivel y swap. Las latencias están modeladas, así que el AMAT medido se puede comparar con el calculado a mano.\n\nEl motor en Rust y la interfaz en Vue están totalmente separados y solo se comunican a través de Tauri, de modo que el motor se prueba sin la interfaz. Hay 776 tests automatizados (474 del motor y 302 de la interfaz), un 80% de cobertura de líneas en el motor y 7 ejercicios comprobados a mano contra la teoría.",
+      "ca": "missme és una eina d'escriptori per a estudiants d'arquitectura de computadors. Descrius una jerarquia de memòria, hi executes un programa RISC-V i inspecciones cada estructura mentre s'executa.\n\nLes caches poden tenir qualsevol nombre de nivells, amb organització Von Neumann o Harvard, i hi ha TLB, taules de pàgines multinivell i swap. Les latències estan modelades, de manera que l'AMAT mesurat es pot comparar amb el calculat a mà.\n\nEl motor en Rust i la interfície en Vue estan totalment separats i només es comuniquen a través de Tauri, així que el motor es prova sense la interfície. Hi ha 776 tests automatitzats (474 del motor i 302 de la interfície), un 80% de cobertura de línies al motor i 7 exercicis comprovats a mà contra la teoria."
+    },
+    "start": "2026-05",
+    "end": "2026-10",
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/adriamg101/missme"
+      }
+    ],
+    "languages": [
+      "Rust",
+      "TypeScript"
+    ],
+    "tools": [],
+    "frameworks": [
+      "Vue",
+      "Tauri"
+    ],
+    "home": true
+  },
+  {
+    "id": "epidemic-replication-system",
+    "title": {
+      "en": "Multilayer epidemic replication system",
+      "es": "Sistema de replicación epidémica multicapa",
+      "ca": "Sistema de replicació epidèmica multicapa"
+    },
+    "summary": {
+      "en": "Replicated key-value store with eventual consistency across seven nodes in three layers, with a live Vue dashboard.",
+      "es": "Almacén clave-valor replicado con consistencia eventual en siete nodos y tres capas, con un panel en vivo en Vue.",
+      "ca": "Magatzem clau-valor replicat amb consistència eventual en set nodes i tres capes, amb un tauler en directe en Vue."
+    },
+    "description": {
+      "en": "A replicated key-value store with eventual consistency, written in Python. It runs seven nodes in three layers: writes enter the core layer and move up to layers 1 and 2.\n\nWrites in the core layer use Ricart-Agrawala distributed mutual exclusion, and the system includes a FIFO reader-writer lock. Layers 1 and 2 use main-backup replication, and data flows upward in flushes triggered by the number of writes and by time. Nodes talk over a custom binary TCP protocol.\n\nA Vue 3 dashboard shows the state of every node live over WebSockets.",
+      "es": "Un almacén clave-valor replicado con consistencia eventual, escrito en Python. Ejecuta siete nodos en tres capas: las escrituras entran en la capa core y suben a las capas 1 y 2.\n\nLas escrituras en la capa core usan exclusión mutua distribuida Ricart-Agrawala, y el sistema incluye un lock lector-escritor FIFO. Las capas 1 y 2 usan replicación principal-respaldo, y los datos suben mediante flushes que se disparan por número de escrituras y por tiempo. Los nodos se comunican con un protocolo binario propio sobre TCP.\n\nUn panel en Vue 3 muestra en vivo el estado de cada nodo por WebSockets.",
+      "ca": "Un magatzem clau-valor replicat amb consistència eventual, escrit en Python. Executa set nodes en tres capes: les escriptures entren a la capa core i pugen a les capes 1 i 2.\n\nLes escriptures a la capa core fan servir exclusió mútua distribuïda Ricart-Agrawala, i el sistema inclou un lock lector-escriptor FIFO. Les capes 1 i 2 fan servir replicació amb node principal i còpia de seguretat, i les dades pugen amb flushes que es disparen pel nombre d'escriptures i pel temps. Els nodes es comuniquen amb un protocol binari propi sobre TCP.\n\nUn tauler en Vue 3 mostra en directe l'estat de cada node per WebSockets."
+    },
+    "start": "2025-09",
+    "end": "2026-06",
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/adriamg101/epidemic-replication-system"
+      }
+    ],
+    "languages": [
+      "Python",
+      "JavaScript"
+    ],
+    "tools": [],
+    "frameworks": [
+      "Vue"
+    ],
+    "home": true
+  },
+  {
+    "id": "fault-tolerant-file-servers",
+    "title": {
+      "en": "Fault-tolerant file processing servers",
+      "es": "Servidores de procesamiento de archivos tolerantes a fallos",
+      "ca": "Servidors de processament d'arxius tolerants a fallades"
+    },
+    "summary": {
+      "en": "Four cooperating C processes with main-backup failover: a backup resumes a file transfer where the primary stopped.",
+      "es": "Cuatro procesos en C que cooperan con failover principal-respaldo: el respaldo retoma la transferencia donde la dejó el principal.",
+      "ca": "Quatre processos en C que cooperen amb failover principal-còpia de seguretat: la còpia reprèn la transferència on la va deixar el principal."
+    },
+    "description": {
+      "en": "Four processes written in C cooperate over sockets: a client, an orchestrator that pairs clients with servers and tracks the primary, and two processing servers, one for audio and one for text.\n\nFiles are sent in frames with main-backup failover: after a crash, the backup resumes where the primary stopped. A child process of the orchestrator writes the logs through pipes.",
+      "es": "Cuatro procesos escritos en C cooperan por sockets: un cliente, un orquestador que empareja clientes con servidores y sigue al principal, y dos servidores de procesamiento, uno de audio y otro de texto.\n\nLos archivos se envían en tramas con failover principal-respaldo: tras una caída, el respaldo retoma donde se quedó el principal. Un proceso hijo del orquestador escribe los logs por pipes.",
+      "ca": "Quatre processos escrits en C cooperen per sockets: un client, un orquestrador que emparella clients amb servidors i segueix el principal, i dos servidors de processament, un d'àudio i un de text.\n\nEls arxius s'envien en trames amb failover principal-còpia de seguretat: després d'una caiguda, la còpia reprèn on s'havia quedat el principal. Un procés fill de l'orquestrador escriu els logs per pipes."
+    },
+    "start": "2024-09",
+    "end": "2025-06",
+    "languages": [
+      "C"
+    ],
+    "tools": [],
+    "frameworks": [],
+    "home": true
+  },
+  {
+    "id": "beercode-compiler",
+    "title": {
+      "en": "BeerCode compiler",
+      "es": "Compilador de BeerCode",
+      "ca": "Compilador de BeerCode"
+    },
+    "summary": {
+      "en": "Compiler in Java for BeerCode, a custom language. It generates MIPS assembly that runs in the MARS simulator.",
+      "es": "Compilador en Java para BeerCode, un lenguaje propio. Genera ensamblador MIPS que se ejecuta en el simulador MARS.",
+      "ca": "Compilador en Java per a BeerCode, un llenguatge propi. Genera ensamblador MIPS que s'executa al simulador MARS."
+    },
+    "description": {
+      "en": "BeerCode is a small custom language, and this is the compiler we wrote for it in Java as a group. It does lexical, syntactic and semantic analysis, builds three address code, can optimize it, and generates MIPS assembly.\n\nThe lexer, the table-driven parser and the MIPS backend are written by hand. The generated assembly runs in the MARS simulator.",
+      "es": "BeerCode es un lenguaje propio pequeño, y este es el compilador que escribimos en Java en grupo. Hace análisis léxico, sintáctico y semántico, genera código de tres direcciones, puede optimizarlo y produce ensamblador MIPS.\n\nEl analizador léxico, el analizador sintáctico guiado por tabla y el backend MIPS están escritos a mano. El ensamblador generado se ejecuta en el simulador MARS.",
+      "ca": "BeerCode és un llenguatge propi petit, i aquest és el compilador que vam escriure en Java en grup. Fa anàlisi lèxica, sintàctica i semàntica, genera codi de tres adreces, el pot optimitzar i produeix ensamblador MIPS.\n\nL'analitzador lèxic, l'analitzador sintàctic guiat per taula i el backend MIPS estan escrits a mà. L'ensamblador generat s'executa al simulador MARS."
+    },
+    "start": "2024-09",
+    "end": "2025-06",
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/adriamg101/beercode"
+      }
+    ],
+    "languages": [
+      "Java"
+    ],
+    "tools": [],
+    "frameworks": [],
+    "home": true
+  }
+]

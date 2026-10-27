@@ -1,0 +1,92 @@
+[
+  {
+    "id": "computer-engineering",
+    "title": {
+      "en": "BSc in Computer Engineering",
+      "es": "Grado en Ingeniería Informática",
+      "ca": "Grau en Enginyeria Informàtica"
+    },
+    "institution": "La Salle, Universitat Ramon Llull",
+    "degree": {
+      "en": "BSc in Computer Engineering",
+      "es": "Grado en Ingeniería Informática",
+      "ca": "Grau en Enginyeria Informàtica"
+    },
+    "summary": {
+      "en": "BSc in Computer Engineering at La Salle, Universitat Ramon Llull (2022 to 2026).",
+      "es": "Grado en Ingeniería Informática en La Salle, Universitat Ramon Llull (2022 a 2026).",
+      "ca": "Grau en Enginyeria Informàtica a La Salle, Universitat Ramon Llull (2022 a 2026)."
+    },
+    "description": {
+      "en": "BSc in Computer Engineering at La Salle, Universitat Ramon Llull. Subjects I would highlight are Operating Systems, Advanced Programming and Data Structures, Computer Architecture and Distributed Systems.",
+      "es": "Grado en Ingeniería Informática en La Salle, Universitat Ramon Llull. Destacaría las asignaturas de Sistemas Operativos, Programación Avanzada y Estructuras de Datos, Arquitectura de Computadores y Sistemas Distribuidos.",
+      "ca": "Grau en Enginyeria Informàtica a La Salle, Universitat Ramon Llull. Destacaria les assignatures de Sistemes Operatius, Programació Avançada i Estructures de Dades, Arquitectura de Computadors i Sistemes Distribuïts."
+    },
+    "start": "2022-09",
+    "end": "2026-10",
+    "languages": [
+      "Java",
+      "C",
+      "Python"
+    ],
+    "tools": [],
+    "frameworks": [],
+    "home": true
+  },
+  {
+    "id": "ccna-introduction-to-networks",
+    "title": {
+      "en": "CCNA: Introduction to Networks",
+      "es": "CCNA: Introduction to Networks",
+      "ca": "CCNA: Introduction to Networks"
+    },
+    "institution": "Cisco Networking Academy",
+    "degree": {
+      "en": "Course",
+      "es": "Curso",
+      "ca": "Curs"
+    },
+    "summary": {
+      "en": "Introductory module of the CCNA program.",
+      "es": "Módulo introductorio del programa CCNA.",
+      "ca": "Mòdul introductori del programa CCNA."
+    },
+    "description": {
+      "en": "Introduction to Networks, the introductory module of the CCNA program, at the Cisco Networking Academy.",
+      "es": "Introduction to Networks, el módulo introductorio del programa CCNA, en la Cisco Networking Academy.",
+      "ca": "Introduction to Networks, el mòdul introductori del programa CCNA, a la Cisco Networking Academy."
+    },
+    "languages": [],
+    "tools": [],
+    "frameworks": [],
+    "home": false
+  },
+  {
+    "id": "videogames-course-ub",
+    "title": {
+      "en": "Intensive videogames course",
+      "es": "Curso intensivo de videojuegos",
+      "ca": "Curs intensiu de videojocs"
+    },
+    "institution": "Universitat de Barcelona",
+    "degree": {
+      "en": "Intensive course",
+      "es": "Curso intensivo",
+      "ca": "Curs intensiu"
+    },
+    "summary": {
+      "en": "Intensive videogames course.",
+      "es": "Curso intensivo de videojuegos.",
+      "ca": "Curs intensiu de videojocs."
+    },
+    "description": {
+      "en": "Intensive videogames course at the Universitat de Barcelona.",
+      "es": "Curso intensivo de videojuegos en la Universitat de Barcelona.",
+      "ca": "Curs intensiu de videojocs a la Universitat de Barcelona."
+    },
+    "languages": [],
+    "tools": [],
+    "frameworks": [],
+    "home": false
+  }
+]

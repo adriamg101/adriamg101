@@ -1,0 +1,86 @@
+{
+  "name": "Adrià Martínez Gallifa",
+  "tagline": {
+    "en": "Software engineer, backend focus, growing towards software architecture",
+    "es": "Ingeniero de software con foco en backend, creciendo hacia la arquitectura de software",
+    "ca": "Enginyer de programari amb focus en backend, creixent cap a l'arquitectura de programari"
+  },
+  "bio": {
+    "en": "I graduated in Computer Engineering at La Salle (Universitat Ramon Llull) in 2026 and I'm looking for my first backend job, though I'm open to full stack. In the long run I want to work on software architecture. I like knowing how a system fits together inside, from the memory hierarchy to distributed services. I mostly work with Rust, Java, Python, TypeScript and C on Linux.",
+    "es": "Me gradué en Ingeniería Informática en La Salle (Universitat Ramon Llull) en 2026 y busco mi primer puesto backend, aunque estoy abierto a full stack. A largo plazo quiero dedicarme a la arquitectura de software. Me gusta entender cómo encaja un sistema por dentro, desde la jerarquía de memoria hasta los servicios distribuidos. Trabajo sobre todo con Rust, Java, Python, TypeScript y C en Linux.",
+    "ca": "Em vaig graduar en Enginyeria Informàtica a La Salle (Universitat Ramon Llull) el 2026 i busco el meu primer lloc backend, tot i que estic obert a full stack. A llarg termini vull dedicar-me a l'arquitectura de programari. M'agrada entendre com encaixa un sistema per dins, des de la jerarquia de memòria fins als serveis distribuïts. Treballo sobretot amb Rust, Java, Python, TypeScript i C a Linux."
+  },
+  "photo": "photo-placeholder.svg",
+  "prompt": {
+    "user": "adriamg101",
+    "host": "portfolio"
+  },
+  "lines": [
+    {
+      "label": {
+        "en": "Languages",
+        "es": "Idiomas",
+        "ca": "Idiomes"
+      },
+      "rows": [
+        {
+          "name": {
+            "en": "Catalan",
+            "es": "Catalán",
+            "ca": "Català"
+          },
+          "level": {
+            "en": "Native",
+            "es": "Nativo",
+            "ca": "Natiu"
+          }
+        },
+        {
+          "name": {
+            "en": "Spanish",
+            "es": "Castellano",
+            "ca": "Castellà"
+          },
+          "level": {
+            "en": "Native",
+            "es": "Nativo",
+            "ca": "Natiu"
+          }
+        },
+        {
+          "name": {
+            "en": "English",
+            "es": "Inglés",
+            "ca": "Anglès"
+          },
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "label": "CV",
+      "value": {
+        "en": "(placeholder) Download CV",
+        "es": "(ejemplo) Descargar CV",
+        "ca": "(exemple) Descarrega el CV"
+      },
+      "href": "cv-placeholder.pdf",
+      "download": true
+    },
+    {
+      "label": "GitHub",
+      "value": "github.com/adriamg101",
+      "href": "https://github.com/adriamg101"
+    },
+    {
+      "label": "Email",
+      "value": "adriamartinezgallifa@gmail.com",
+      "href": "mailto:adriamartinezgallifa@gmail.com"
+    },
+    {
+      "label": "LinkedIn",
+      "value": "linkedin.com/in/adriamaga",
+      "href": "https://www.linkedin.com/in/adriamaga"
+    }
+  ]
+}

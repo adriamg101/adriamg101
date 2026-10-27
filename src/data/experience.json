@@ -1,0 +1,154 @@
+[
+  {
+    "id": "teaching-assistant",
+    "title": {
+      "en": "Teaching Assistant",
+      "es": "Asistente de docencia",
+      "ca": "Assistent docent"
+    },
+    "organization": "La Salle, Universitat Ramon Llull",
+    "role": {
+      "en": "Teaching assistant, Advanced Programming and Data Structures (Java) and Operating Systems",
+      "es": "Asistente de Programación Avanzada y Estructuras de Datos (Java) y de Sistemas Operativos",
+      "ca": "Assistent de Programació Avançada i Estructures de Dades (Java) i de Sistemes Operatius"
+    },
+    "summary": {
+      "en": "Teaching assistant for Advanced Programming and Data Structures (2023 to 2026) and Operating Systems (2025 to 2026), with about 120 students per course.",
+      "es": "Asistente de Programación Avanzada y Estructuras de Datos (2023 a 2026) y de Sistemas Operativos (2025 a 2026), con unos 120 estudiantes por curso.",
+      "ca": "Assistent de Programació Avançada i Estructures de Dades (2023 a 2026) i de Sistemes Operatius (2025 a 2026), amb uns 120 estudiants per curs."
+    },
+    "description": {
+      "en": "I was a teaching assistant for Advanced Programming and Data Structures (PAED, in Java) from 2023 to 2026 and for Operating Systems in 2025 and 2026, with about 120 students per course. The Operating Systems professor chose me for that course.\n\nI designed and implemented 8 of the 30 lab assignments of the 2026/27 Operating Systems course: signals, threads, fork, sockets, select, mutexes, semaphores, and shared memory with pipes.\n\nI answered questions in and outside the lab, graded submissions and projects, prepared material and gave around 5 full one-hour classes.",
+      "es": "Fui asistente de Programación Avanzada y Estructuras de Datos (PAED, en Java) de 2023 a 2026 y de Sistemas Operativos en 2025 y 2026, con unos 120 estudiantes por curso. El profesor de Sistemas Operativos me eligió para esa asignatura.\n\nDiseñé e implementé 8 de las 30 prácticas de laboratorio del curso 2026/27 de Sistemas Operativos: señales, hilos, fork, sockets, select, mutex, semáforos y memoria compartida con pipes.\n\nResolví dudas dentro y fuera del laboratorio, corregí entregas y proyectos, preparé material y di unas 5 clases completas de una hora.",
+      "ca": "Vaig ser assistent de Programació Avançada i Estructures de Dades (PAED, en Java) del 2023 al 2026 i de Sistemes Operatius el 2025 i el 2026, amb uns 120 estudiants per curs. El professor de Sistemes Operatius em va escollir per a aquesta assignatura.\n\nVaig dissenyar i implementar 8 de les 30 pràctiques de laboratori del curs 2026/27 de Sistemes Operatius: senyals, fils, fork, sockets, select, mutex, semàfors i memòria compartida amb pipes.\n\nVaig resoldre dubtes dins i fora del laboratori, vaig corregir lliuraments i projectes, vaig preparar material i vaig fer unes 5 classes completes d'una hora."
+    },
+    "start": "2023-09",
+    "end": "2026-09",
+    "languages": [
+      "Java"
+    ],
+    "tools": [],
+    "frameworks": [],
+    "home": true
+  },
+  {
+    "id": "green-code-research",
+    "title": {
+      "en": "Research Collaborator",
+      "es": "Colaborador de investigación",
+      "ca": "Col·laborador de recerca"
+    },
+    "organization": "La Salle, Universitat Ramon Llull",
+    "role": {
+      "en": "Research collaborator, software research line",
+      "es": "Colaborador en la línea de investigación en software",
+      "ca": "Col·laborador a la línia de recerca en programari"
+    },
+    "summary": {
+      "en": "Took part in a systematic literature review on green code and sustainable software (2014 to 2024). Not published yet.",
+      "es": "Participé en una revisión sistemática de la literatura sobre green code y software sostenible (2014 a 2024). Aún no está publicada.",
+      "ca": "Vaig participar en una revisió sistemàtica de la literatura sobre green code i programari sostenible (2014 a 2024). Encara no està publicada."
+    },
+    "description": {
+      "en": "I took part in a systematic literature review on green code and sustainable software, covering 2014 to 2024. The group screened more than 2,000 articles and read 120 in full, and I analyzed about 40 of them.\n\nI also attended the group's seminars. The review has not been published yet.",
+      "es": "Participé en una revisión sistemática de la literatura sobre green code y software sostenible, que cubre de 2014 a 2024. El grupo cribó más de 2.000 artículos y leyó 120 completos, y yo analicé unos 40.\n\nTambién asistí a los seminarios del grupo. La revisión aún no se ha publicado.",
+      "ca": "Vaig participar en una revisió sistemàtica de la literatura sobre green code i programari sostenible, que cobreix del 2014 al 2024. El grup va garbellar més de 2.000 articles i en va llegir 120 complets, i jo n'he analitzat uns 40.\n\nTambé vaig assistir als seminaris del grup. La revisió encara no s'ha publicat."
+    },
+    "start": "2024-09",
+    "end": "2026-06",
+    "languages": [],
+    "tools": [],
+    "frameworks": [],
+    "home": true
+  },
+  {
+    "id": "construction-worker",
+    "title": {
+      "en": "Construction worker",
+      "es": "Trabajador de la construcción",
+      "ca": "Treballador de la construcció"
+    },
+    "organization": "Construction",
+    "role": {
+      "en": "Construction worker",
+      "es": "Trabajador de la construcción",
+      "ca": "Treballador de la construcció"
+    },
+    "summary": {
+      "en": "Summer jobs in construction, 2016 to 2019.",
+      "es": "Trabajos de verano en la construcción, de 2016 a 2019.",
+      "ca": "Feines d'estiu a la construcció, del 2016 al 2019."
+    },
+    "description": {
+      "en": "Summer jobs in construction between 2016 and 2019.",
+      "es": "Trabajos de verano en la construcción entre 2016 y 2019.",
+      "ca": "Feines d'estiu a la construcció entre el 2016 i el 2019."
+    },
+    "start": "2016-06",
+    "end": "2019-09",
+    "languages": [],
+    "tools": [],
+    "frameworks": [],
+    "home": false
+  },
+  {
+    "id": "supermarket-stocker",
+    "title": {
+      "en": "Supermarket stocker",
+      "es": "Reponedor en un supermercado",
+      "ca": "Reposador en un supermercat"
+    },
+    "organization": "Supermarket",
+    "role": {
+      "en": "Supermarket stocker",
+      "es": "Reponedor en un supermercado",
+      "ca": "Reposador en un supermercat"
+    },
+    "summary": {
+      "en": "Supermarket stocker, 2019 to 2020.",
+      "es": "Reponedor en un supermercado, de 2019 a 2020.",
+      "ca": "Reposador en un supermercat, del 2019 al 2020."
+    },
+    "description": {
+      "en": "Stocker at a supermarket between 2019 and 2020.",
+      "es": "Reponedor en un supermercado entre 2019 y 2020.",
+      "ca": "Reposador en un supermercat entre el 2019 i el 2020."
+    },
+    "start": "2019-01",
+    "end": "2020-12",
+    "languages": [],
+    "tools": [],
+    "frameworks": [],
+    "home": false
+  },
+  {
+    "id": "telepizza-delivery-driver",
+    "title": {
+      "en": "Telepizza delivery driver",
+      "es": "Repartidor de Telepizza",
+      "ca": "Repartidor de Telepizza"
+    },
+    "organization": "Telepizza",
+    "role": {
+      "en": "Delivery driver",
+      "es": "Repartidor",
+      "ca": "Repartidor"
+    },
+    "summary": {
+      "en": "Delivery driver at Telepizza, 2019 to 2021.",
+      "es": "Repartidor en Telepizza, de 2019 a 2021.",
+      "ca": "Repartidor a Telepizza, del 2019 al 2021."
+    },
+    "description": {
+      "en": "Delivery driver at Telepizza between 2019 and 2021.",
+      "es": "Repartidor en Telepizza entre 2019 y 2021.",
+      "ca": "Repartidor a Telepizza entre el 2019 i el 2021."
+    },
+    "start": "2019-01",
+    "end": "2021-12",
+    "languages": [],
+    "tools": [],
+    "frameworks": [],
+    "home": false
+  }
+]
