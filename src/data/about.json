@@ -1,0 +1,86 @@
+{
+  "name": "Adrià Martínez Gallifa",
+  "tagline": {
+    "en": "Software engineer, backend focus, growing towards software architecture",
+    "es": "Ingeniero de software con foco en backend, creciendo hacia la arquitectura de software",
+    "ca": "Enginyer de programari amb focus en backend, creixent cap a l'arquitectura de programari"
+  },
+  "bio": {
+    "en": "I graduated in Computer Engineering at La Salle in 2026 and I'm looking for a backend role. In the long term I want to work on software architecture. Most of my projects are in distributed systems and systems programming, such as a replicated key-value store with eventual consistency and file servers in C with main-backup failover.\n\nMy final degree project is a memory hierarchy simulator in Rust. The engine and the interface are kept strictly apart, and 776 automated tests check it. I have been a teaching assistant for three years, and I designed 8 of the 30 lab exercises of the current Operating Systems course.",
+    "es": "Me gradué en Ingeniería Informática en La Salle en 2026 y busco un puesto de backend. A largo plazo quiero dedicarme a la arquitectura de software. La mayoría de mis proyectos son de sistemas distribuidos y programación de sistemas, como un almacén clave-valor replicado con consistencia eventual o unos servidores de archivos en C con failover principal-respaldo.\n\nMi trabajo de fin de grado es un simulador de jerarquía de memoria en Rust. El motor y la interfaz están estrictamente separados, y lo comprueban 776 tests automatizados. He sido asistente de docencia durante tres años, y diseñé 8 de las 30 prácticas de laboratorio del curso actual de Sistemas Operativos.",
+    "ca": "Em vaig graduar en Enginyeria Informàtica a La Salle el 2026 i busco una feina de backend. A llarg termini vull dedicar-me a l'arquitectura de programari. La majoria dels meus projectes són de sistemes distribuïts i programació de sistemes, com un magatzem clau-valor replicat amb consistència eventual o uns servidors d'arxius en C amb failover principal-còpia de seguretat.\n\nEl meu treball de fi de grau és un simulador de jerarquia de memòria en Rust. El motor i la interfície estan estrictament separats, i el comproven 776 tests automatitzats. He estat assistent docent durant tres anys, i vaig dissenyar 8 de les 30 pràctiques de laboratori del curs actual de Sistemes Operatius."
+  },
+  "photo": "portfolio-photo.jpg",
+  "prompt": {
+    "user": "adriamg101",
+    "host": "portfolio"
+  },
+  "lines": [
+    {
+      "label": {
+        "en": "Languages",
+        "es": "Idiomas",
+        "ca": "Idiomes"
+      },
+      "rows": [
+        {
+          "name": {
+            "en": "Catalan",
+            "es": "Catalán",
+            "ca": "Català"
+          },
+          "level": {
+            "en": "Native",
+            "es": "Nativo",
+            "ca": "Natiu"
+          }
+        },
+        {
+          "name": {
+            "en": "Spanish",
+            "es": "Castellano",
+            "ca": "Castellà"
+          },
+          "level": {
+            "en": "Native",
+            "es": "Nativo",
+            "ca": "Natiu"
+          }
+        },
+        {
+          "name": {
+            "en": "English",
+            "es": "Inglés",
+            "ca": "Anglès"
+          },
+          "level": "B2"
+        }
+      ]
+    },
+    {
+      "label": "CV",
+      "value": {
+        "en": "(placeholder) Download CV",
+        "es": "(ejemplo) Descargar CV",
+        "ca": "(exemple) Descarrega el CV"
+      },
+      "href": "cv-placeholder.pdf",
+      "download": true
+    },
+    {
+      "label": "GitHub",
+      "value": "github.com/adriamg101",
+      "href": "https://github.com/adriamg101"
+    },
+    {
+      "label": "Email",
+      "value": "adriamartinezgallifa@gmail.com",
+      "href": "mailto:adriamartinezgallifa@gmail.com"
+    },
+    {
+      "label": "LinkedIn",
+      "value": "linkedin.com/in/adriamaga",
+      "href": "https://www.linkedin.com/in/adriamaga"
+    }
+  ]
+}

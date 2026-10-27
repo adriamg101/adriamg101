@@ -1,0 +1,53 @@
+import type { IconType } from 'react-icons'
+import { FaDatabase, FaJava } from 'react-icons/fa'
+import {
+  SiC,
+  SiCplusplus,
+  SiCss,
+  SiDocker,
+  SiGit,
+  SiGithub,
+  SiGnubash,
+  SiGo,
+  SiHtml5,
+  SiJavascript,
+  SiLinux,
+  SiMongodb,
+  SiMysql,
+  SiNodedotjs,
+  SiPostgresql,
+  SiPython,
+  SiReact,
+  SiRust,
+  SiTailwindcss,
+  SiTypescript,
+  SiVite,
+} from 'react-icons/si'
+
+// Keys are normalized skill keys (see normalizeSkillKey). Add entries here.
+export const iconMap: Record<string, IconType> = {
+  python: SiPython,
+  java: FaJava,
+  javascript: SiJavascript,
+  typescript: SiTypescript,
+  c: SiC,
+  'c++': SiCplusplus,
+  // No 'c#' entry: react-icons has no C# logo; set a custom icon in skills.json.
+  html: SiHtml5,
+  css: SiCss,
+  react: SiReact,
+  nodejs: SiNodedotjs,
+  docker: SiDocker,
+  git: SiGit,
+  github: SiGithub,
+  linux: SiLinux,
+  sql: FaDatabase,
+  postgresql: SiPostgresql,
+  mysql: SiMysql,
+  mongodb: SiMongodb,
+  vite: SiVite,
+  tailwindcss: SiTailwindcss,
+  bash: SiGnubash,
+  rust: SiRust,
+  go: SiGo,
+}

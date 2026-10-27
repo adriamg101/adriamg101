@@ -1,0 +1,101 @@
+[
+  {
+    "id": "home-server-proxmox",
+    "title": {
+      "en": "Home server with Proxmox",
+      "es": "Servidor casero con Proxmox",
+      "ca": "Servidor casolà amb Proxmox"
+    },
+    "summary": {
+      "en": "A home server running Proxmox that hosts several services.",
+      "es": "Un servidor casero con Proxmox que aloja varios servicios.",
+      "ca": "Un servidor casolà amb Proxmox que allotja diversos serveis."
+    },
+    "description": {
+      "en": "A home server running Proxmox that hosts several services.",
+      "es": "Un servidor casero con Proxmox que aloja varios servicios.",
+      "ca": "Un servidor casolà amb Proxmox que allotja diversos serveis."
+    },
+    "languages": [],
+    "tools": [
+      "Proxmox",
+      "Docker",
+      "Linux"
+    ],
+    "frameworks": [],
+    "home": true
+  },
+  {
+    "id": "corne-keyboard-firmware",
+    "title": {
+      "en": "Split keyboard firmware (Corne)",
+      "es": "Firmware para teclado dividido (Corne)",
+      "ca": "Firmware per a teclat dividit (Corne)"
+    },
+    "summary": {
+      "en": "Firmware for my Corne split keyboard.",
+      "es": "Firmware para mi teclado dividido Corne.",
+      "ca": "Firmware per al meu teclat dividit Corne."
+    },
+    "description": {
+      "en": "Firmware for my Corne split keyboard.",
+      "es": "Firmware para mi teclado dividido Corne.",
+      "ca": "Firmware per al meu teclat dividit Corne."
+    },
+    "languages": [
+      "C++"
+    ],
+    "tools": [],
+    "frameworks": [],
+    "home": true
+  },
+  {
+    "id": "retro-console-batocera",
+    "title": {
+      "en": "Retro console with Batocera",
+      "es": "Consola retro con Batocera",
+      "ca": "Consola retro amb Batocera"
+    },
+    "summary": {
+      "en": "Planned: a retro console with Batocera on a Raspberry Pi 4.",
+      "es": "Planificado: una consola retro con Batocera sobre una Raspberry Pi 4.",
+      "ca": "Planificat: una consola retro amb Batocera sobre una Raspberry Pi 4."
+    },
+    "description": {
+      "en": "Planned project: a retro gaming console running Batocera on a Raspberry Pi 4.",
+      "es": "Proyecto planificado: una consola de juegos retro con Batocera sobre una Raspberry Pi 4.",
+      "ca": "Projecte planificat: una consola de jocs retro amb Batocera sobre una Raspberry Pi 4."
+    },
+    "languages": [],
+    "tools": [
+      "Raspberry Pi",
+      "Linux"
+    ],
+    "frameworks": [],
+    "home": false
+  },
+  {
+    "id": "steam-console-linux",
+    "title": {
+      "en": "Steam gaming console on Linux",
+      "es": "Consola de juegos Steam en Linux",
+      "ca": "Consola de jocs Steam a Linux"
+    },
+    "summary": {
+      "en": "Planned: a Linux gaming console with a dedicated GPU for Steam games.",
+      "es": "Planificado: una consola Linux para juegos con una GPU dedicada para Steam.",
+      "ca": "Planificat: una consola Linux per a jocs amb una GPU dedicada per a Steam."
+    },
+    "description": {
+      "en": "Planned project: a console running a gaming-oriented Linux distribution, using a dedicated GPU to play Steam games that work with Proton.",
+      "es": "Proyecto planificado: una consola con una distribución Linux orientada a juegos que aprovecha una GPU dedicada para jugar a juegos de Steam compatibles con Proton.",
+      "ca": "Projecte planificat: una consola amb una distribució Linux orientada a jocs que aprofita una GPU dedicada per jugar a jocs de Steam compatibles amb Proton."
+    },
+    "languages": [],
+    "tools": [
+      "Linux"
+    ],
+    "frameworks": [],
+    "home": false
+  }
+]
