@@ -1,12 +1,24 @@
 <h2>Hi, I'm Adri! 👋</h2>
 
-🎓 Software Engineering student @ La Salle Bonanova | Graduating September 2026
+🎓 Computer Engineering graduate @ La Salle, Universitat Ramon Llull (2026)
 
-🏗️ Aspiring Software Architect
+💼 Looking for a backend role. In the long term I want to work on software architecture.
 
-🔭 I'm currently working on my final degree project: a computer memory hierarchy visualizer, built with Tauri 2.0 + TypeScript + Rust
+🌐 Portfolio: [adriamg101.github.io/adriamg101](https://adriamg101.github.io/adriamg101/)
 
-🌱 I'm currently learning Rust and diving deeper into software architecture fundamentals
+<h3>🔭 Projects</h3>
+
+- [missme](https://github.com/adriamg101/missme): my final degree project, a desktop memory hierarchy simulator in Rust, Vue and Tauri. It runs RISC-V programs on configurable caches, TLB, page tables and swap, and has 776 automated tests.
+- [epidemic-replication-system](https://github.com/adriamg101/epidemic-replication-system): a replicated key-value store in Python with eventual consistency across seven nodes in three layers, Ricart-Agrawala mutual exclusion and a live Vue dashboard.
+- [beercode](https://github.com/adriamg101/beercode): a compiler we wrote in Java in a team of five for a joke language that reads like an order at a bar. It generates MIPS assembly.
+
+<h3>👨‍🏫 Teaching</h3>
+
+For three years I was a teaching assistant at La Salle for Advanced Programming and Data Structures (Java), Operating Systems (C) and Advanced Operating Systems.
+
+<h3>📫 Contact</h3>
+
+[LinkedIn](https://www.linkedin.com/in/adriamaga) · adriamartinezgallifa@gmail.com
 
 <h3>🛠️ Languages & Tools</h3>
 
