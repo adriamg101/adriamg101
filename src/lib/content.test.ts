@@ -140,7 +140,7 @@ describe('shipped about lines', () => {
   it('has a downloadable CV line before the contact lines', () => {
     const lines = content.about.lines
     const i = lines.findIndex((x) => labelEn(x) === 'CV')
-    expect(lines[i]).toMatchObject({ href: 'cv-placeholder.pdf', download: true })
+    expect(lines[i]).toMatchObject({ href: 'adriamgCV.pdf', download: true })
     expect(i).toBeLessThan(lines.findIndex((x) => labelEn(x) === 'GitHub'))
   })
 })
