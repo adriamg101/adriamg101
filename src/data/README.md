@@ -101,8 +101,14 @@ To change the CV, put the PDF in `public/` (for example `public/cv.pdf`) and set
 
 ## Entry sections (`projects`, `experience`, `education`, `hobbies`)
 
-Each of these files is an **array of entries**. Order in the file does not matter: entries are sorted
-by `start`, newest first, and entries without `start` go last. `id` must be unique within the file.
+Each of these files is an **array of entries**. `id` must be unique within the file. Order in the
+file does not matter, because the site sorts every section the same way:
+
+1. By end date, most recent first. `"end": "present"` means the entry is still active (a current
+   job, a project still in progress), so it goes before any entry with a month.
+2. An entry with `start` but no `end` sorts by its `start`.
+3. Entries with no dates at all go last.
+4. Entries with the same date are ordered alphabetically by their English title (`title.en`).
 
 | Field | Type | Required | Meaning / constraints |
 | --- | --- | --- | --- |
@@ -111,7 +117,7 @@ by `start`, newest first, and entries without `start` go last. `id` must be uniq
 | `description` | translatable | yes | Full text, shown only in the detail view. Separate paragraphs with a blank line (`\n\n` inside the JSON string). |
 | `summary` | translatable | no | Short text for the cards. If missing, cards use the first paragraph of `description`, cut to two lines. |
 | `start` | `YYYY-MM` | no | Start date. |
-| `end` | `YYYY-MM` or `"present"` | no | End date. Not allowed without `start`. |
+| `end` | `YYYY-MM` or `"present"` | no | End date, used for sorting. `"present"` marks the entry as still active. Not allowed without `start`. |
 | `links` | array of `{ "label": string, "url": string }` | no | Link buttons in the detail view. |
 | `downloads` | array of `{ "label": translatable, "file": string }` | no | Download buttons in the detail view, after the links (a thesis, documentation). `file` is a path under `public/` (`docs/thesis.pdf`), resolved like the CV file. |
 | `image` | string | no | Cover image on the cards. In the detail view it is shown only when `media` is empty. Alt text: the entry title. |

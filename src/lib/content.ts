@@ -8,12 +8,23 @@ import type { UiKey } from './i18n'
 import { parseContent } from './schema'
 import type { Content, Entry } from './schema'
 
+// Date an entry sorts by: its end ("present" beats any month), or its start when it has no end.
+function sortDate(e: Entry): string | undefined {
+  if (e.end === 'present') return '9999-12'
+  return e.end ?? e.start
+}
+
+// Most recent end first, undated entries last; ties are broken alphabetically by English title.
 export function sortEntries(entries: Entry[]): Entry[] {
   return [...entries].sort((a, b) => {
-    if (a.start === b.start) return 0
-    if (!a.start) return 1
-    if (!b.start) return -1
-    return a.start < b.start ? 1 : -1
+    const da = sortDate(a)
+    const db = sortDate(b)
+    if (da !== db) {
+      if (!da) return 1
+      if (!db) return -1
+      return da < db ? 1 : -1
+    }
+    return a.title.en.localeCompare(b.title.en)
   })
 }
 

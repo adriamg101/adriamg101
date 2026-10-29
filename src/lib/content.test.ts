@@ -20,8 +20,26 @@ describe('sortEntries', () => {
     expect(input.map((e) => e.id)).toEqual(['none', 'old', 'new'])
   })
 
-  it('is stable for equal starts', () => {
-    const out = sortEntries([mk('a', '2024-01'), mk('b', '2024-01')])
+  it('breaks ties alphabetically by English title', () => {
+    const out = sortEntries([mk('b', '2024-01'), mk('a', '2024-01'), mk('z'), mk('y')])
+    expect(out.map((e) => e.id)).toEqual(['a', 'b', 'y', 'z'])
+  })
+
+  it('sorts by end date, with present first', () => {
+    const out = sortEntries([
+      { ...mk('ended-2025', '2020-01'), end: '2025-06' },
+      { ...mk('ended-2026', '2025-09'), end: '2026-06' },
+      { ...mk('active', '2019-01'), end: 'present' },
+      mk('started-2025-09', '2025-09'),
+    ])
+    expect(out.map((e) => e.id)).toEqual(['active', 'ended-2026', 'started-2025-09', 'ended-2025'])
+  })
+
+  it('orders same end date alphabetically regardless of start', () => {
+    const out = sortEntries([
+      { ...mk('b', '2025-01'), end: '2026-06' },
+      { ...mk('a', '2020-01'), end: '2026-06' },
+    ])
     expect(out.map((e) => e.id)).toEqual(['a', 'b'])
   })
 })

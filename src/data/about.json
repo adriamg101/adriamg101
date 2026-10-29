@@ -60,11 +60,11 @@
     {
       "label": "CV",
       "value": {
-        "en": "(placeholder) Download CV",
-        "es": "(ejemplo) Descargar CV",
-        "ca": "(exemple) Descarrega el CV"
+        "en": "Download CV",
+        "es": "Descargar CV",
+        "ca": "Descarrega el CV"
       },
-      "href": "cv-placeholder.pdf",
+      "href": "adriamgCV.pdf",
       "download": true
     },
     {
